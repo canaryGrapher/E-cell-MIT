@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <!-- Importing bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- Importing local files -->
@@ -25,23 +23,24 @@
     <link href="styles/reset.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onscroll="changeNavbarStyle()">
+<body>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style="width: 100vw;" id="navbar">
-        <a class="navbar-brand ml-0 m-0" href="#">E-Cell<br /></a>
+        <a class="navbar-brand ml-0 m-0" href="#"><span class="d-inline d-md-none"><i
+                    class="fas fa-bars ham-menu"></i></span>E-Cell<br /></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#aboutus" id="aboutus-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="#events" id="events-link">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="#team" id="team-link">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact" id="contact-link">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -53,7 +52,7 @@
         </div>
         <div class="container d-flex flex-column justify-content-center h-100 w-100 text-center text-light">
             <p class="punch-font">Innovation</p>
-            <p class="sub-text">is seeing what everybody has seen and thinking what nobody has thought.</p>
+            <p class="slide-para">is seeing what everybody has seen and thinking what nobody has thought.</p>
         </div>
         <div class="mx-auto social-overlay d-flex flex-row flex-md-column justify-content-center">
             <i class="fab fa-facebook-f"></i>
@@ -68,8 +67,8 @@
     </div>
 
 
-    <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row">
-        <p class="text-white space-font bottom-heading text-center">Let your imaginations fly</p>
+    <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row" id="aboutus">
+        <p class="text-white space-font bottom-heading text-center px-3">Let your imaginations fly</p>
         <div class="row m-0 p-0">
             <div class="col-md-6 col-12 d-flex flex-column justify-content-center p-3 p-md-5">
                 <h1 class="slide-heading text-white d-none d-md-inline">Enterpreneurship Cell</h1>
@@ -110,14 +109,15 @@
         </div>
     </div>
 
-    <div class="container-fluid slide-4 position-relative">
-        <p class="text-white space-font bottom-heading text-center">Take a look at how we engage</p>
-        <div class="container pt-5 px-3 px-md-5">
-            <h1 class="slide-heading text-white">Events</h1>
+    <div class="container-fluid slide-4 position-relative" id="events">
+        <p class="text-white space-font bottom-heading text-center d-none d-md-inline">Take a look at how we engage</p>
+        <p class="text-white space-font bottom-heading text-center d-md-none">How we engage</p>
+        <div class="container pt-2 px-3 px-md-5 pt-5 pt-md-0">
+            <h1 class="slide-heading text-white pt-5">Events</h1>
             <p class="text-white slide-para">To engage with the students of the institute, we organize numerous events. These are few of them.</p>
             <div class="row events-holder py-5">
                 <!-- Card for buddy program  -->
-                <div class="col-4 m-0 p-0">
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/mentor-event.jpg');" id="buddy" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="buddy-text">
                             <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Buddy Program</h1>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <!-- Card for Startup visits -->
-                <div class="col-4 m-0 p-0">
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/startup-event.jpg');" id="startup-visits" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="startup-visits-text">
                             <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Startup Visits</h1>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <!-- Card for idea validation meetups -->
-                <div class="col-4 m-0 p-0">
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/idea-event.jpg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="idea-validation-text">
                             <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Idea Validation Meetups
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <!-- Card for B-Model Competition -->
-                <div class="col-4 m-0 p-0">
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/model-event.jpg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="b-model-text">
                             <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">B-Model Competition
@@ -172,29 +172,31 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card for Copy 1 -->
-                <div class="col-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/mentor-event.jpg');" id="copy-1" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
-                        <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="copy-1-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Copy 1</h1>
-                            <p style="font-size: 1.2rem;">An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
+                <!-- Card for Rural Entrepreneurship Division -->
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/rural-event.jpg');" id="rural" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                        <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="rural-text">
+                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Rural Entrepreneurship Division</h1>
+                            <p style="font-size: 1.2rem;">A dedicated division focused solely on promoting innovation and entrepreneurship in the rural sector to create a positive social impact on rural society.
                             </p>
                         </div>
                         <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Copy 1</h5>
+                            <h5 class="text-white text-right" style="font-size:34px;">Rural Entrepreneurship Division
+                            </h5>
                         </div>
                     </div>
                 </div>
-                <!-- Card for Copy 2 -->
-                <div class="col-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/mentor-event.jpg');" id="copy-2" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
-                        <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="copy-2-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Copy 2</h1>
-                            <p style="font-size: 1.2rem;">An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
+                <!-- Card for Camps and Workshops -->
+                <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/e-summit-event.jpg');" id="e-summit" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                        <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="e-summit-text">
+                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Camps and Workshops
+                            </h1>
+                            <p style="font-size: 1.2rem;">Our primary role will be to periodically hold camps and hands-on workshops for training potential entrepreneurs to be ready for setting up their start-up.
                             </p>
                         </div>
                         <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Copy 2</h5>
+                            <h5 class="text-white text-right" style="font-size:34px;">Camps and Workshops</h5>
                         </div>
                     </div>
                 </div>
@@ -202,7 +204,7 @@
         </div>
     </div>
 
-    <div class="container-fluid slide-5 position-relative">
+    <div class="container-fluid slide-5 position-relative" id="team">
         <p class="text-white space-font bottom-heading text-center">Meet the crew</p>
         <div class="container p-md-5 p-3">
             <h1 class="slide-heading text-white pt-5">Team</h1>
@@ -215,7 +217,7 @@
         </div>
     </div>
 
-    <div class="container-fluid slide-6 position-relative py-5">
+    <div class="container-fluid slide-6 position-relative py-5" id="contact">
         <p class="text-white space-font bottom-heading text-center">Send a signal</p>
         <div class="container pt-5">
             <div class="row pt-5">
@@ -240,46 +242,48 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6 d-none d-md-inline">
-                    <div class="satellite-space text-center">
-                        <img class="img" src="./images/satellite.png" alt="Image of a rocket" />
+                <div class="col-md-6 d-none d-md-flex flex-md-column justify-content-center">
+                    <div class=" satellite-space text-center">
+                        <img class="img " src="./images/satellite.png " alt="Image of a rocket " />
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="page-info w-100 p-3">
-        <div class="row py-3 h-100">
-            <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center">
-                <img class="img mx-auto" src="./images/logo.png" alt="Logo of E-cell" height="30" width="30" />
-                <p class="slide-para text-white">
+    <div class="page-info w-100 p-3 ">
+        <div class="row py-3 h-100 ">
+            <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center ">
+                <img class="img mx-auto " src="./images/logo.png " alt="Logo of E-cell " height="30 " width="30 " />
+                <p class="slide-para text-white ">
                     Enterpreneurship Cell
                 </p>
-                <p class="p-1 text-muted d-none d-md-inline">Manipal Institute of Technology</p>
+                <p class="p-1 text-muted d-none d-md-inline ">Manipal Institute of Technology</p>
             </div>
-            <div class="col-md-4 col-12 d-flex flex-row justify-content-center">
-                <div class="my-auto d-flex flex-column justify-content-center">
-                    <p class="p-1 text-muted my-auto address-line py-2">Manipal Institute of Technology<br> Udupi, Karnataka<br> 576104
+            <div class="col-md-4 col-12 d-flex flex-row justify-content-center ">
+                <div class="my-auto d-flex flex-column justify-content-center ">
+                    <p class="p-1 text-muted my-auto address-line py-2 ">Manipal Institute of Technology<br> Udupi, Karnataka
+                        <br> 576104
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 col-12 d-flex flex-column justify-content-center">
-                <p class="mx-auto pb-2 text-white slide-para">Connect with us</p>
-                <div class="social-links mx-auto">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-twitter"></i>
+            <div class="col-md-4 col-12 d-flex flex-column justify-content-center ">
+                <p class="mx-auto pb-2 text-white slide-para ">Connect with us</p>
+                <div class="social-links mx-auto ">
+                    <i class="fab fa-facebook-f "></i>
+                    <i class="fab fa-instagram "></i>
+                    <i class="fas fa-envelope "></i>
+                    <i class="fab fa-linkedin-in "></i>
+                    <i class="fab fa-twitter "></i>
                 </div>
+                <p class="text-center pt-3 text-muted ">I made this website. <a href="https://yasharyan.com " target="_blank " style="text-decoration: none; color: #B62B3D; ">Find me</a>.</p>
             </div>
         </div>
     </div>
 
 
     <!-- Importing local scripts -->
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js "></script>
 </body>
 
 </html>
