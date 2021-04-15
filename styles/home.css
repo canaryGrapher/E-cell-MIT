@@ -274,7 +274,7 @@ body {
     min-height: 50vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-image: url("../images/space.jpg");
+    /* background-image: url("../images/space.jpg"); */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -293,5 +293,10 @@ body {
 }
 
 .member-social-links>i:hover {
+    color: #B62B3D;
+}
+
+.member-social-links>a {
+    text-decoration: none;
     color: #B62B3D;
 }
