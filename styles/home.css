@@ -11,7 +11,7 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: #02020C;
+    background-color: #e9e9e9;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
     position: relative;
     margin: 0;
     height: 100%;
+    width: 100vw;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     font-family: 'Oxygen', sans-serif;
@@ -98,12 +99,25 @@ body {
 
 .slide-down-text:hover {
     color: #B62B3D!important;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 
 /* Landing page design */
 
-.full-screen {
+.slide-1 {
     height: 100vh;
     width: 100vw;
     background-image: url("../images/man-innovation.jpg");
@@ -113,7 +127,7 @@ body {
     background-position: center;
 }
 
-.full-screen .punch-font {
+.slide-1 .punch-font {
     font-size: 15rem;
     mix-blend-mode: difference;
 }
@@ -122,7 +136,7 @@ body {
     font-family: punch;
 }
 
-.full-screen p:nth-child(2) {
+.slide-1n p:nth-child(2) {
     font-size: 1.8rem;
     mix-blend-mode: difference;
 }
@@ -133,7 +147,8 @@ body {
 .slide-2 {
     position: relative;
     background-image: linear-gradient(180deg, #02020C 0%, rgba(0, 0, 0, 1) 100%);
-    height: 80vh;
+    min-height: 80vh;
+    width: 100vw !important;
 }
 
 .slide-2>.container {
@@ -160,24 +175,26 @@ body {
 
 .rocket-launchpad {
     position: absolute;
-    right: 5%;
-    top: 5%;
-    transform: rotate(-30deg);
+    right: 0;
+    top: 0;
     animation-name: flyRocket;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear
+    animation-timing-function: linear;
 }
 
 @keyframes flyRocket {
     0% {
-        transform: translateY(150px);
+        transform: translateY(-20px);
     }
     33% {
-        transform: translateY(50px);
+        transform: translateY(10px);
+    }
+    66% {
+        transform: translateY(-10px);
     }
     100% {
-        transform: translateY(150px);
+        transform: translateY(-20px);
     }
 }
 
@@ -189,7 +206,7 @@ body {
 
 .bottom-heading {
     position: absolute;
-    top: 10%;
+    top: 4%;
     width: 100%;
 }
 
@@ -242,8 +259,8 @@ body {
 
 .slide-4 {
     min-height: 50vh;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
     background-color: #000000;
 }
 
@@ -274,9 +291,9 @@ body {
     min-height: 50vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    /* background-image: url("../images/space.jpg"); */
     background-attachment: fixed;
     background-size: cover;
+    background-color: #000000;
 }
 
 .team-board {
@@ -292,11 +309,104 @@ body {
     font-size: 1.4rem;
 }
 
-.member-social-links>i:hover {
-    color: #B62B3D;
-}
-
 .member-social-links>a {
     text-decoration: none;
     color: #B62B3D;
+}
+
+.member-social-links>a:hover {
+    color: #FAFAFA;
+}
+
+
+/* Sixth Page design */
+
+.slide-6 {
+    background-color: #000000;
+}
+
+#message {
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.satellite-space {
+    animation-name: floatSpaceship;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes floatSpaceship {
+    0% {
+        transform: translateY(30px);
+    }
+    33% {
+        transform: translateY(10px);
+        transform: translateX(10px);
+    }
+    66% {
+        transform: translateY(-10px);
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+
+/* Footer design */
+
+.page-info {
+    height: 30vh;
+    background-color: #000000;
+    border-width: 4px 0 0 0;
+    border-color: #B62B3D;
+    border-style: solid;
+}
+
+.social-links>i {
+    font-size: 1.4rem;
+    color: #B62B3D;
+    margin: auto 10px;
+}
+
+.social-links>i:hover {
+    color: #fafafa;
+}
+
+@media only screen and (max-width: 800px) {
+    .logo-img {
+        display: none;
+    }
+    .slide-1 .punch-font {
+        font-size: 4rem;
+    }
+    .social-overlay {
+        position: absolute;
+        bottom: 6vh;
+        width: 100vw;
+        margin: auto auto 20px 0;
+        align-items: center;
+    }
+    .social-overlay>i {
+        font-size: 1.2rem;
+        margin: 10px auto;
+    }
+    .slide-heading {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .slide-sub-heading {
+        font-size: 2rem;
+        color: #B62B3D;
+        font-weight: bold;
+    }
+    .slide-para {
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+    .text-container {
+        text-align: left!important;
+    }
 }

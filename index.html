@@ -21,6 +21,7 @@
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- Importing local files -->
+    <link href="styles/home-mobile.css" rel="stylesheet" type="text/css" />
     <link href="styles/home.css" rel="stylesheet" type="text/css" />
     <link href="styles/reset.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,9 +29,6 @@
 <body onscroll="changeNavbarStyle()">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0" id="navbar">
         <a class="navbar-brand ml-0 m-0" href="#">E-Cell<br /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -49,7 +47,8 @@
             </ul>
         </div>
     </nav>
-    <div class="full-screen">
+
+    <div class="slide-1">
         <div class="logo-img">
             <img class="img" src="./images/logo.png" alt="E-Cell MIT logo" height="40">
         </div>
@@ -57,7 +56,7 @@
             <p class="punch-font">Innovation</p>
             <p class="sub-text">is seeing what everybody has seen and thinking what nobody has thought.</p>
         </div>
-        <div class="social-overlay d-flex flex-column justify-content-center">
+        <div class="mx-auto social-overlay d-flex flex-row flex-md-column justify-content-center">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-instagram"></i>
             <i class="fas fa-envelope"></i>
@@ -72,14 +71,16 @@
 
     <div class="container-fluid slide-2">
         <p class="text-white space-font bottom-heading text-center">Let your imaginations fly</p>
-        <div class="container w-50">
-            <h1 class="slide-heading text-white">Enterpreneurship Cell</h1>
-            <p class="slide-sub-heading mt-2">Manipal Institute of Technology</p>
-            <p class="slide-para text-white pt-3">We are the entrepreneurship cell of the Manipal Institute of Technology, and we act as a bridge between students with ideas and people with expertise. We want to develop a vibrant start-up culture at campus, focusing on innovation, problem-solving,
-                self-employment, and valuable companies' creation by creating a network of experts who could mentor the budding students to develop their ideas.</p>
-        </div>
-        <div class="rocket-launchpad">
-            <img class="img" src="./images/rocket.png" alt="Image of a rocket" />
+        <div class="container m-0 p-0">
+            <div class="col-md-6 col-12">
+                <h1 class="slide-heading text-white">Enterpreneurship Cell</h1>
+                <p class="slide-sub-heading mt-2">Manipal Institute of Technology</p>
+                <p class="slide-para text-white pt-3">We are the entrepreneurship cell of the Manipal Institute of Technology, and we act as a bridge between students with ideas and people with expertise. We want to develop a vibrant start-up culture at campus, focusing on innovation, problem-solving,
+                    self-employment, and valuable companies' creation by creating a network of experts who could mentor the budding students to develop their ideas.</p>
+            </div>
+            <div class="col-md-6 d-none d-md-inline rocket-launchpad text-center">
+                <img class="img" src="./images/rocket.png" alt="Image of a rocket" />
+            </div>
         </div>
     </div>
 
@@ -88,12 +89,12 @@
         <p class="text-white space-font bottom-heading text-center">Be a part of our cause</p>
         <div class="row">
             <div class="col"></div>
-            <div class="col-5 gallery-skeleton p-3 d-grid">
+            <div class="col-md-5 col-12 gallery-skeleton p-3 d-grid">
                 <div class="tile item-1 bg-primary"></div>
                 <div class="tile item-2 bg-secondary"></div>
                 <div class="tile item-3 bg-warning"></div>
             </div>
-            <div class="col-5 d-flex flex-column justify-content-center px-5">
+            <div class="col-md-5 col-12 d-flex flex-column justify-content-center px-5">
                 <div class="text-container p-0">
                     <h1 class="slide-heading text-white">Mission</h1>
                     <p class="text-white slide-para">To act as a one-stop destination for all students looking to convert their ideas into viable start-ups and to inculcate the spirit of entrepreneurship among young minds.
@@ -145,7 +146,8 @@
                 <div class="col-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/idea-event.jpg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="idea-validation-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Idea Validation Meetups</h1>
+                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Idea Validation Meetups
+                            </h1>
                             <p style="font-size: 1.2rem;">A platform for start-up enthusiasts to get their ideas validated from seasoned mentors, faculty, and alumni from different sectors of the industry. A platform for start-up enthusiasts to get their ideas validated from seasoned
                                 mentors, faculty, and alumni from different sectors of the industry.
                             </p>
@@ -159,7 +161,8 @@
                 <div class="col-4 m-0 p-0">
                     <div class="card mx-auto border-0" style="background-image: url('./images/model-event.jpg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="b-model-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">B-Model Competition</h1>
+                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">B-Model Competition
+                            </h1>
                             <p style="font-size: 1.2rem;">An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
                             </p>
                         </div>
@@ -207,10 +210,73 @@
             </p>
             <div class="row team-board pt-5" id="team-row">
                 <!-- Team member cards -->
-
             </div>
         </div>
     </div>
+
+    <div class="container-fluid slide-6 position-relative py-5">
+        <p class="text-white space-font bottom-heading text-center">Send a signal</p>
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="col-md-6 col-12">
+                    <div class="w-md-75 w-100">
+                        <h1 class="slide-heading pyl-5 text-white">Contact Us</h1>
+                        <p class="text-white slide-para">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#B62B3D">mail@example.com</a> for more details.</p>
+                        <form class="mx-auto">
+                            <div class="form-group py-2">
+                                <label for="name" class="slide-para pb-1 text-white">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="What should we call you?" />
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="email" class="slide-para pb-1 text-white">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Where cans we reach you?" />
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="message" class="slide-para pb-1 text-white">Message</label>
+                                <textarea class="form-control" id="message" placeholder="What is on your mind?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg" style="background-color: #B62B3D; color: #ffffff;">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-inline">
+                    <div class="satellite-space mx-auto">
+                        <img class="img" src="./images/satellite.png" alt="Image of a rocket" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-info w-100 p-3">
+        <div class="row d-flex flex-row py-3 h-100">
+            <div class="col-4 d-flex flex-column justify-content-center text-center">
+                <img class="img mx-auto" src="./images/logo.png" alt="Logo of E-cell" height="30" width="30" />
+                <p class="slide-para text-white">
+                    Enterpreneurship Cell
+                </p>
+                <p class="p-1 text-muted">Manipal Institute of Technology</p>
+            </div>
+            <div class="col-4 d-flex flex-row justify-content-center">
+                <div class="my-auto d-flex flex-column justify-content-center">
+                    <p class="p-1 text-muted my-auto">Manipal Institute of Technology<br> Udupi, Karnataka<br> 576104
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center">
+                <p class="mx-auto pb-2 text-white slide-para">Connect with us</p>
+                <div class="social-links mx-auto">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Importing local scripts -->
     <script src="./scripts/index.js"></script>
 </body>
