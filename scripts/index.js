@@ -23,9 +23,9 @@ const getTeamMembers = async() => {
         // checking the availability of social links
         const insta = parsedMemberData[dummy_incremator].instagram ? `<a href="${parsedMemberData[dummy_incremator].instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : null;
         let memberTemplate = `
-        <div class="col-3 member">
-            <img class="img rounded-circle mx-auto" src="./images/team/DhwanitShah.jpeg" alt="Dhwanit Shah" height="250" />
-            <p class="name-tag py-2">Dhwanit Shah</p>
+        <div class="col-3 member py-4">
+            <img class="img rounded-circle mx-auto" src="${parsedMemberData[dummy_incremator].imgURL}" alt="Dhwanit Shah" height="250" />
+            <p class="name-tag py-2">${parsedMemberData[dummy_incremator].name}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
                 <i class="fas fa-envelope mx-3"></i>
                 <i class="fas fa-phone mx-3"></i>

@@ -1,18 +1,18 @@
 [{
         "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
+        "imgURL": "./images/team/DhwaniShah.jpeg",
         "phone": "+919979853462",
         "email": "dhwanpshah@gmail.com"
     },
     {
         "name": "Ankit Jajoo",
-        "imgURL": "./images/DhwaniShah.jpeg",
+        "imgURL": "./images/team/DhwaniShah.jpeg",
         "phone": "+91",
         "email": ""
     },
     {
         "name": "Armaan Charania",
-        "imgURL": "./images/ArmaanCharania.jpeg",
+        "imgURL": "./images/team/ArmaanCharania.jpeg",
         "phone": "+917378833923",
         "email": "armaan.charania9@gmail.com",
         "instagram": "https://www.instagram.com/arm._.aan",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Gaurav Dugar",
-        "imgURL": "./images/GauravDugar.jpeg",
+        "imgURL": "./images/team/GauravDugar.jpeg",
         "phone": "+91757502550",
         "email": "gaurav.dugar555@gmail.com",
         "instagram": "https://www.instagram.com/thegauravdugar/",
@@ -29,7 +29,7 @@
     },
     {
         "name": "K Mohit Rao",
-        "imgURL": "./images/MohitRao.png",
+        "imgURL": "./images/team/MohitRao.png",
         "phone": "+919833714056",
         "email": "kmohitrao7@gmail.com",
         "instagram": "https://www.instagram.com/kmohitrao/",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Riya Jain",
-        "imgURL": "./images/RiyaJain.jpeg",
+        "imgURL": "./images/team/RiyaJain.jpeg",
         "phone": "+918976241195",
         "email": "riyajn1102@gmail.com",
         "linkedin": "https://www.linkedin.com/in/riya-jain-054ab219b",
@@ -45,7 +45,7 @@
     },
     {
         "name": "Stuti Sinha",
-        "imgURL": "./images/StutiSinha.jpeg",
+        "imgURL": "./images/team/StutiSinha.jpeg",
         "phone": "+919940027920",
         "email": "stutis2000@gmail.com",
         "instagram": "https://www.instagram.com/stuts2000"
