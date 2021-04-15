@@ -1,0 +1,297 @@
+@font-face {
+    font-family: punch;
+    src: url("../fonts/punch.otf");
+}
+
+@font-face {
+    font-family: space;
+    src: url("../fonts/Xxix-0Wgvz.ttf");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #02020C;
+}
+
+body {
+    background: #E2E4E7;
+    padding: 0;
+    font-family: quicksand;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/* Customization of navigation bar */
+
+.navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar-brand {
+    background-color: #B62B3D;
+    padding: 20px;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    margin: auto 10px;
+}
+
+.nav-link:hover {
+    color: #B62B3D !important;
+}
+
+
+/* Styles for social overlay */
+
+.social-overlay {
+    position: absolute;
+    bottom: 2vh;
+    left: 2vw;
+    margin: auto auto 20px 20px;
+}
+
+.social-overlay>i {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 15px auto;
+}
+
+.social-overlay>i:hover {
+    color: #B62B3D;
+    transform: scale(1.3);
+}
+
+
+/* Style for logo positioning */
+
+.logo-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* Slide down text positioning */
+
+.slide-down-text {
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
+    text-transform: uppercase;
+}
+
+.slide-down-text:hover {
+    color: #B62B3D!important;
+}
+
+
+/* Landing page design */
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/man-innovation.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.full-screen .punch-font {
+    font-size: 15rem;
+    mix-blend-mode: difference;
+}
+
+.punch-font {
+    font-family: punch;
+}
+
+.full-screen p:nth-child(2) {
+    font-size: 1.8rem;
+    mix-blend-mode: difference;
+}
+
+
+/* Second page design */
+
+.slide-2 {
+    position: relative;
+    background-image: linear-gradient(180deg, #02020C 0%, rgba(0, 0, 0, 1) 100%);
+    height: 80vh;
+}
+
+.slide-2>.container {
+    position: absolute;
+    bottom: 25%;
+    left: 7%;
+}
+
+.slide-heading {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.slide-sub-heading {
+    font-size: 2rem;
+    color: #B62B3D;
+    font-weight: bold;
+}
+
+.slide-para {
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.rocket-launchpad {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transform: rotate(-30deg);
+    animation-name: flyRocket;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes flyRocket {
+    0% {
+        transform: translateY(150px);
+    }
+    33% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(150px);
+    }
+}
+
+.space-font {
+    font-family: space;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+}
+
+.bottom-heading {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+
+/* Third page design */
+
+.slide-3 {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    background-color: #000000;
+    min-height: 60vh;
+}
+
+.text-container {
+    text-align: right!important;
+}
+
+.gallery-skeleton {
+    display: grid;
+    gap: 15px;
+    height: 60vh;
+}
+
+.tile {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("../images/gallery-image-1.jpg");
+}
+
+.item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("../images/gallery-image-2.jpg");
+}
+
+.item-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url("../images/gallery-image-3.jpg");
+}
+
+
+/* Fourth page design */
+
+.slide-4 {
+    min-height: 50vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: #000000;
+}
+
+.events-holder>.col-4>.card {
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px !important;
+    width: 95%;
+    border-radius: 15px;
+}
+
+.event-info {
+    display: none;
+    border-radius: 15px;
+    background-color: #02020C;
+    border: 1px solid #ffffff;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Fifth page design */
+
+.slide-5 {
+    min-height: 50vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-image: url("../images/space.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.team-board {
+    color: #FAFAFA;
+    text-align: center;
+}
+
+.name-tag {
+    font-size: 1.8rem;
+}
+
+.member-social-links {
+    font-size: 1.4rem;
+}
+
+.member-social-links>i:hover {
+    color: #B62B3D;
+}
