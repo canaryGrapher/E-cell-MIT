@@ -8,9 +8,11 @@
     {
         "name": "Ankit Jajoo",
         "position": "Deputy Chairperson",
-        "imgURL": "https://haircutinspiration.com/wp-content/uploads/Ryan-Reynolds-square.jpg",
-        "phone": "+91",
-        "email": ""
+        "imgURL": "./images/team/AnkitJajoo.jpeg",
+        "phone": "+919340891315",
+        "email": "ankit.jajoo369@gmail.com",
+        "instagram": "https://www.instagram.com/ankit.jajoo47",
+
     },
     {
         "name": "Armaan Charania",

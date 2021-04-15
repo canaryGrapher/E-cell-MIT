@@ -29,10 +29,10 @@ const getTeamMembers = async() => {
 
         let memberTemplate = `
         <div class="col-md-3 col-6 member py-4">
-            <img class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="Dhwanit Shah" height="250" />
-            <img class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="Dhwanit Shah" height="175" />
+            <img class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
+            <img class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
             <p class="name-tag pt-2">${parsedMemberData[dummy_incremator].name}</p>
-            <p class="text-white pt-1 pb-3">Position Undefined</p>
+            <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
                 ${phone}
                 ${email}
