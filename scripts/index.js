@@ -17,12 +17,12 @@ const changeNavbarStyle = () => {
 
 const getTeamMembers = async() => {
     let innerHTML_container = "";
-    const teamMemberData = await fetch('./data/team.json');
-    const parsedMemberData = await teamMemberData;
+    const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/master/scripts/data/team.json');
+    const parsedMemberData = await teamMemberData.json();
     for (let dummy_incremator = parsedMemberData.length - 1; dummy_incremator >= 0; dummy_incremator--) {
-        console.log(parsedMemberData[dummy_incremator])
+        // checking the availability of social links
+        const insta = parsedMemberData[dummy_incremator].instagram ? `<a href="${parsedMemberData[dummy_incremator].instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : null;
         let memberTemplate = `
-        < !-- Card for ${parsedMemberData[dummy_incremator]} -- >
         <div class="col-3 member">
             <img class="img rounded-circle mx-auto" src="./images/team/DhwanitShah.jpeg" alt="Dhwanit Shah" height="250" />
             <p class="name-tag py-2">Dhwanit Shah</p>
@@ -31,9 +31,9 @@ const getTeamMembers = async() => {
                 <i class="fas fa-phone mx-3"></i>
             </div>
         </div>`
-            // innerHTML_container += templateGenerator(parsedMemberData[dummy_incremator].date, parsedShi[dummy_incremator].text)
+        innerHTML_container += memberTemplate;
     }
-    // document.getElementById("post-insertion-target").innerHTML = innerHTML_container;
+    document.getElementById("team-row").innerHTML = innerHTML_container;
 }
 
 getTeamMembers()

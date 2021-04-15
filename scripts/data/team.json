@@ -1,43 +1,53 @@
 [{
         "name": "Dhwanit Shah",
         "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "phone": "+919979853462",
+        "email": "dhwanpshah@gmail.com"
     },
     {
-        "name": "Dhwanit Shah",
+        "name": "Ankit Jajoo",
         "imgURL": "./images/DhwaniShah.jpeg",
         "phone": "+91",
         "email": ""
     },
     {
-        "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "name": "Armaan Charania",
+        "imgURL": "./images/ArmaanCharania.jpeg",
+        "phone": "+917378833923",
+        "email": "armaan.charania9@gmail.com",
+        "instagram": "https://www.instagram.com/arm._.aan",
+        "facebook": "https://www.facebook.com/armaan.charania",
+        "linkedin": "https://www.linkedin.com/in/armaan-charania-2a5008194"
     },
     {
-        "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "name": "Gaurav Dugar",
+        "imgURL": "./images/GauravDugar.jpeg",
+        "phone": "+91757502550",
+        "email": "gaurav.dugar555@gmail.com",
+        "instagram": "https://www.instagram.com/thegauravdugar/",
+        "linkedin": "https://www.linkedin.com/in/gaurav-dugar-599618157"
     },
     {
-        "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "name": "K Mohit Rao",
+        "imgURL": "./images/MohitRao.png",
+        "phone": "+919833714056",
+        "email": "kmohitrao7@gmail.com",
+        "instagram": "https://www.instagram.com/kmohitrao/",
+        "linkedin": "https://www.linkedin.com/in/kmohitrao/"
     },
     {
-        "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "name": "Riya Jain",
+        "imgURL": "./images/RiyaJain.jpeg",
+        "phone": "+918976241195",
+        "email": "riyajn1102@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/riya-jain-054ab219b",
+        "instagram": "https://www.instagram.com/riya_jn"
     },
     {
-        "name": "Dhwanit Shah",
-        "imgURL": "./images/DhwaniShah.jpeg",
-        "phone": "+91",
-        "email": ""
+        "name": "Stuti Sinha",
+        "imgURL": "./images/StutiSinha.jpeg",
+        "phone": "+919940027920",
+        "email": "stutis2000@gmail.com",
+        "instagram": "https://www.instagram.com/stuts2000"
     }
 ]
