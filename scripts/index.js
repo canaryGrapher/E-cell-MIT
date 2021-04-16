@@ -76,8 +76,8 @@ const getTeamMembers = async() => {
 
         let memberTemplate = `
         <div class="col-6 col-sm-6 col-md-3 member py-4">
-            <img class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
-            <img class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
+            <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
+            <img loading="lazy" class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
             <p class="name-tag pt-2">${parsedMemberData[dummy_incremator].name}</p>
             <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
@@ -95,5 +95,5 @@ const getTeamMembers = async() => {
 
 // First fetch the team members then set the offset value record
 getTeamMembers().then(e => {
-    getOffsetValues()
+    getOffsetValues();
 })
