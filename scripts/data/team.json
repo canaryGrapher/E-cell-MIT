@@ -1,14 +1,14 @@
 [{
         "name": "Dhwanit Shah",
         "position": "Chairperson",
-        "imgURL": "./images/team/DhwanitShah.jpeg",
+        "imgURL": "./images/team/DhwanitShah.jpg",
         "phone": "+919979853462",
         "email": "dhwanpshah@gmail.com"
     },
     {
         "name": "Ankit Jajoo",
         "position": "Deputy Chairperson",
-        "imgURL": "./images/team/AnkitJajoo.jpeg",
+        "imgURL": "./images/team/AnkitJajoo.jpg",
         "phone": "+919340891315",
         "email": "ankit.jajoo369@gmail.com",
         "instagram": "https://www.instagram.com/ankit.jajoo47",
@@ -28,7 +28,7 @@
     {
         "name": "Gaurav Dugar",
         "position": "Operations and Logistics Head",
-        "imgURL": "./images/team/GauravDugar.jpeg",
+        "imgURL": "./images/team/GauravDugar.jpg",
         "phone": "+91757502550",
         "email": "gaurav.dugar555@gmail.com",
         "instagram": "https://www.instagram.com/thegauravdugar/",
@@ -37,7 +37,7 @@
     {
         "name": "K Mohit Rao",
         "position": "Corporate Relations Head",
-        "imgURL": "./images/team/MohitRao.png",
+        "imgURL": "./images/team/MohitRao.jpg",
         "phone": "+919833714056",
         "email": "kmohitrao7@gmail.com",
         "instagram": "https://www.instagram.com/kmohitrao/",
@@ -46,7 +46,7 @@
     {
         "name": "Riya Jain",
         "position": "Student Outreach Head",
-        "imgURL": "./images/team/RiyaJain.jpeg",
+        "imgURL": "./images/team/RiyaJain.jpg",
         "phone": "+918976241195",
         "email": "riyajn1102@gmail.com",
         "linkedin": "https://www.linkedin.com/in/riya-jain-054ab219b",
@@ -55,7 +55,7 @@
     {
         "name": "Stuti Sinha",
         "position": "Graphics Head",
-        "imgURL": "./images/team/StutiSinha.jpeg",
+        "imgURL": "./images/team/StutiSinha.jpg",
         "phone": "+919940027920",
         "email": "stutis2000@gmail.com",
         "instagram": "https://www.instagram.com/stuts2000"

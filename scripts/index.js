@@ -1,7 +1,9 @@
 const scrollSpyIDs = ["aboutus", "events", "team", "contact"];
 
 let offsetDistanceRecord = [];
+let hiddenContext = true;
 
+// get the distance of eac section from the top of the page
 const getOffsetValues = () => {
     for (let dummy_incremator = 0; dummy_incremator < scrollSpyIDs.length; dummy_incremator++) {
         let itemOffset = document.getElementById(`${scrollSpyIDs[dummy_incremator]}`).offsetTop;
@@ -9,6 +11,7 @@ const getOffsetValues = () => {
     }
 }
 
+// function to add a black tint to the navbar upon scroll
 const changeNavbarStyle = () => {
     let currentScrollPos = window.pageYOffset;
     if (currentScrollPos > 100) {
@@ -21,20 +24,22 @@ const changeNavbarStyle = () => {
 
 //check which element is closer to the user for scroll spy
 const checkElementProximity = (distance) => {
-    for (let dummy_incremator = 0; dummy_incremator < offsetDistanceRecord.length; dummy_incremator++) {
-        if (distance < offsetDistanceRecord[0]) {
-            highlightElement()
+    if (distance < offsetDistanceRecord[0]) {
+        highlightElement()
+    } else if (distance >= offsetDistanceRecord[3]) {
+        highlightElement(scrollSpyIDs[scrollSpyIDs.length - 1])
+    } else {
+        if (offsetDistanceRecord[0] <= distance && offsetDistanceRecord[1] > distance) {
+            highlightElement(scrollSpyIDs[0])
+        } else if (offsetDistanceRecord[1] <= distance && offsetDistanceRecord[2] > distance) {
+            highlightElement(scrollSpyIDs[1])
+        } else if (offsetDistanceRecord[2] <= distance && offsetDistanceRecord[3] > distance) {
+            highlightElement(scrollSpyIDs[2])
         }
-        if (offsetDistanceRecord[dummy_incremator] <= distance && offsetDistanceRecord[dummy_incremator + 1] > distance) {
-            highlightElement(scrollSpyIDs[dummy_incremator])
-        }
-        if (distance >= offsetDistanceRecord[offsetDistanceRecord.length - 1]) {
-            highlightElement(scrollSpyIDs[scrollSpyIDs.length - 1])
-        }
-
     }
 }
 
+//function to change the highlighted navbar link
 const highlightElement = (id) => {
     if (id == "") {
         null
@@ -47,9 +52,6 @@ const highlightElement = (id) => {
         }
     }
 }
-
-//Listening to scroll events on the document
-document.addEventListener("scroll", changeNavbarStyle)
 
 // function to show event details when mouse is hovered over the card
 const showEventDetails = (e) => {
@@ -97,3 +99,25 @@ const getTeamMembers = async() => {
 getTeamMembers().then(e => {
     getOffsetValues();
 })
+
+//function to show context menu on phones
+const toggleContextMenu = () => {
+    if (hiddenContext) {
+        document.getElementById("context-menu").style.display = "flex";
+        hiddenContext ^= true;
+    } else {
+        document.getElementById("context-menu").style.display = "none";
+        hiddenContext ^= true;
+    }
+}
+
+const showContext = () => {
+    let navbarHeight = document.getElementById("navbar").offsetHeight;
+    document.getElementById("context-menu").style.top = `${navbarHeight}px`
+}
+
+
+
+//Listening to scroll events on the document
+document.addEventListener("scroll", changeNavbarStyle)
+window.addEventListener("load", showContext, false)
