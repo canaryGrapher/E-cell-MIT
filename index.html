@@ -25,11 +25,14 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style=" height: 100px; width: 100vw;" id="navbar">
-        <a class="navbar-brand d-md-none d-inline ml-0 m-0" onclick="toggleContextMenu()" href="#"> 
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style="width: 100vw;" id="navbar">
+        <a class="navbar-brand fixed-top d-md-none d-flex w-100 ml-0 m-0" onclick="toggleContextMenu()" href="#"> 
             <span class="d-inline d-md-none"> 
                 <i class="fas fa-bars ham-menu"></i>
             </span><br />
+        </a>
+        <a class="d-none d-md-block navbar-brand" href="#">
+            <img src="./images/eCellLogoLight.png" width="100" height="100" alt="">
         </a>
 
         <div class="d-md-flex justify-content-end d-none px-md-5 flex-md-row collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +51,7 @@
                 </li>
             </ul>
         </div>
-
+        
         <div class="context-menu position-fixed d-md-none" id="context-menu">
             <a class="navigation-link m-0 p-0" href="#aboutus" id="aboutus-context-link" onclick="toggleContextMenu()">
                 <div class="context-menu-item">
@@ -77,7 +80,7 @@
         <div class="container d-flex flex-column justify-content-center h-100 w-100 text-center text-light">
             <p class="text-white fs-1 mt-3">We are</p>
             <p class="punch-font">E-CELL</p>
-            <img loading="lazy" class="img text-center mx-auto" src="./images/eCellLogo.png" alt="E-Cell MIT logo" height="60%" style="margin-top:-100px">
+            <img loading="lazy" class="img center-logo text-center mx-auto" src="./images/eCellLogoLight.png" alt="E-Cell MIT logo" height="60%" style="margin-top:-100px">
         </div>
         <div class="mx-auto social-overlay position-absolute d-flex flex-row flex-md-column justify-content-center">
             <i class="fab fa-facebook-f"></i>
@@ -93,17 +96,17 @@
 
     <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row" id="aboutus">
         </p>
-        <div class="row m-0 p-0 justify-content-center mx-auto">
+        <div class="row m-0 p-0 justify-content-center mx-auto px-3">
             <div class="col-12 col-md-9 d-flex flex-md-row flex-column justify-content-center align-items-center text-center p-3">
                 <div class="text-container-right px-md-3">
                     <h1 class="slide-heading text-white">Mission</h1>
-                    <p class="text-white slide-para fs-3">
+                    <p class="text-white slide-para fs-3" style="line-height: 40px;">
                         To act as a one-stop destination for all students looking to convert their ideas into viable start-ups and to inculcate the spirit of entrepreneurship among young minds.
                     </p>
                 </div>
                 <div class="text-container-left px-md-3">
                     <h1 class="slide-heading text-white">Vision</h1>
-                    <p class="text-white slide-para fs-3">
+                    <p class="text-white slide-para fs-3" style="line-height: 40px;">
                         To empower entrepreneurship by promoting a vibrant start-up ecosystem and facilitating budding students to develop their ideas. </p>
                 </div>
             </div>
@@ -116,85 +119,66 @@
             <div class="row events-holder py-5">
                 <!-- Card for buddy program  -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/mentor-event.jpg');" id="buddy" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/buddy.jpeg');" id="buddy" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="buddy-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Buddy Program</h1>
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">Buddy Program</h1>
                             <p style="font-size: 1.2rem;">Enthusiastic students with promising ideas will be provided individual mentorship from entrepreneurs and will be clubbed with one founder/CEO as the buddy to guide him throughout his /her journey of establishing a start-up.
                                 There will also be opportunities provided to interact and network with more founders from Manipal.
                             </p>
-                        </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Buddy Program</h5>
                         </div>
                     </div>
                 </div>
                 <!-- Card for Startup visits -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/startup-event.jpg');" id="startup-visits" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/startup.jpeg');" id="startup-visits" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="startup-visits-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Startup Visits</h1>
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">Startup Visits</h1>
                             <p style="font-size: 1.2rem;">There are multiple start-ups/Industries owned by MIT alumni. The proposed body would arrange for field trips to these start-up locations for better ground understanding, and increased exposure.
                             </p>
-                        </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Startup Visits</h5>
                         </div>
                     </div>
                 </div>
                 <!-- Card for idea validation meetups -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/idea-event.jpg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/ideameet.jpeg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="idea-validation-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Idea Validation Meetups
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">Idea Validation Meetups
                             </h1>
                             <p style="font-size: 1.2rem;">A platform for start-up enthusiasts to get their ideas validated from seasoned mentors, faculty, and alumni from different sectors of the industry. A platform for start-up enthusiasts to get their ideas validated from seasoned
                                 mentors, faculty, and alumni from different sectors of the industry.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Idea Validation Meetups</h5>
-                        </div>
                     </div>
                 </div>
                 <!-- Card for B-Model Competition -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/model-event.jpg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/bModel.jpeg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="b-model-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">B-Model Competition
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">B-Model Competition
                             </h1>
                             <p style="font-size: 1.2rem;">An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
                             </p>
-                        </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">B-Model Competition</h5>
                         </div>
                     </div>
                 </div>
                 <!-- Card for Rural Entrepreneurship Division -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/rural-event.jpg');" id="rural" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/rural.jpeg');" id="rural" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="rural-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Rural Entrepreneurship Division</h1>
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">Rural Entrepreneurship Division</h1>
                             <p style="font-size: 1.2rem;">A dedicated division focused solely on promoting innovation and entrepreneurship in the rural sector to create a positive social impact on rural society.
                             </p>
-                        </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Rural Entrepreneurship Division
-                            </h5>
                         </div>
                     </div>
                 </div>
                 <!-- Card for Camps and Workshops -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/e-summit-event.jpg');" id="e-summit" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0" style="background-image: url('./images/camps.jpeg');" id="e-summit" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="e-summit-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Camps and Workshops
+                            <h1 class="text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #B62B3D!important;">Camps and Workshops
                             </h1>
                             <p style="font-size: 1.2rem;">Our primary role will be to periodically hold camps and hands-on workshops for training potential entrepreneurs to be ready for setting up their start-up.
                             </p>
-                        </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Camps and Workshops</h5>
                         </div>
                     </div>
                 </div>
@@ -244,7 +228,7 @@
     <div class="page-info w-100 p-3 ">
         <div class="row h-100 ">
             <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center ">
-                <img loading="lazy" class="img mx-auto" src="./images/eCellLogo.png" alt="Logo of E-cell " height="300"/>
+                <img loading="lazy" class="img mx-auto" src="./images/eCellLogoLight.png" alt="Logo of E-cell " height="300"/>
                 <p class="slide-para text-white fs-3">
                     Entrepreneurship Cell
                 </p>

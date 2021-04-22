@@ -7,12 +7,15 @@
         font-family: space;
         src: url("../fonts/Xxix-0Wgvz.ttf");
     }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
     html {
         height: 100%;
         width: 100%;
         background-color: #000000;
         overflow-x: hidden;
+        font-family: 'Ubuntu', sans-serif!important;
     }
     
     body {
@@ -21,10 +24,9 @@
         margin: 0;
         width: 100vw;
         -webkit-font-smoothing: antialiased;
-        font-family: 'Ubuntu', sans-serif;
     }
     /* Customization for scrollbar */
-    
+
     * {
         scrollbar-width: thin;
         scrollbar-color: #B62B3D rgb(0, 0, 0);
@@ -44,15 +46,16 @@
         border-radius: 20px;
         border: 3px solid rgb(0, 0, 0);
     }
+
     /* Customization of navigation bar */
     
     .navbar {
         margin: 0 !important;
         padding: 0 !important;
+        height: 100px;
     }
     
     .navbar-brand {
-        background-color: #B62B3D;
         padding: 20px;
     }
     
@@ -78,8 +81,8 @@
     
     .context-menu-item {
         padding: 25px;
-        border: 1px solid #ffffff;
-        width: 50vw;
+        border: 0.5px solid #ffffff;
+        width: 100vw;
         background-color: #B62B3D;
         color: #ffffff;
     }
@@ -87,6 +90,7 @@
     .context-menu-item:hover {
         background-color: #ffffff;
     }
+
     /* Styles for social overlay */
     
     .social-overlay {
@@ -98,12 +102,12 @@
     
     .social-overlay>i {
         font-size: 1.5rem;
-        color: #B62B3D;
+        color: #FFFFFF;
         margin: 15px auto;
     }
     
     .social-overlay>i:hover {
-        color: #ffffff;
+        color: #B62B3D;
         transform: scale(1.3);
     }
     /* Style for logo positioning */
@@ -186,7 +190,7 @@
         font-family: punch;
     }
     
-    .slide-1 p:nth-child(4) {
+    .slide-1 p:nth-child(3) {
         font-size: 2rem;
         mix-blend-mode: difference;
         letter-spacing: 5px;
@@ -328,6 +332,14 @@
         height: 400px!important;
         width: 95%;
         border-radius: 15px;
+        box-shadow: 0px 0px 20px 0.5px #d6d6d6;
+    }
+
+    .events-holder>.card-selector>.card:hover {
+        box-shadow: none;
+        height: 380px!important;
+        width: 93%;
+        transition-duration: 200ms;
     }
     
     .event-info {
@@ -456,15 +468,19 @@
     }
     
     @media only screen and (max-width: 800px) {
+        .navbar {
+            height: 60px;
+            position: fixed;
+        }
         .logo-img {
             display: none;
         }
+        .center-logo {
+            padding-top: 40px;
+            height: 340px;
+        }
         .slide-1 .punch-font {
             font-size: 5rem;
-        }
-        .slide-1 p:nth-child(2) {
-            font-size: 1.2rem;
-            letter-spacing: 0px;
         }
         .social-overlay {
             position: absolute;

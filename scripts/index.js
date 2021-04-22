@@ -78,7 +78,7 @@ const getTeamMembers = async() => {
 
         let memberTemplate = `
         <div class="col-12 col-sm-4 col-md-4 member py-4">
-            <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
+            <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="150" />
             <img loading="lazy" class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
             <p class="name-tag punch-font pt-2">${parsedMemberData[dummy_incremator].name}</p>
             <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
