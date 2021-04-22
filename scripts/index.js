@@ -77,10 +77,10 @@ const getTeamMembers = async() => {
         const linkedin = parsedMemberData[dummy_incremator].linkedin ? `<a href="${parsedMemberData[dummy_incremator].linkedin}" aria-label="Linkedin page link" target="_blank"><i class="fab fa-linkedin-in mx-2"></i></a>` : "";
 
         let memberTemplate = `
-        <div class="col-6 col-sm-6 col-md-3 member py-4">
+        <div class="col-12 col-sm-4 col-md-4 member py-4">
             <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
             <img loading="lazy" class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
-            <p class="name-tag pt-2">${parsedMemberData[dummy_incremator].name}</p>
+            <p class="name-tag punch-font pt-2">${parsedMemberData[dummy_incremator].name}</p>
             <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
                 ${phone}

@@ -5,18 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta http-equiv="Cache-control" content="public">
-    <title>Enterpreneurship Cell | MIT</title>
-    <meta name="title" content="Enterpreneurship Cell | MIT" />
+    <title>Entrepreneurship Cell | MIT</title>
+    <meta name="title" content="Entrepreneurship Cell | MIT" />
     <meta name="author" content="Yash Aryan">
-    <meta name="description" content="The website for the enterpreneurship cell of Manipal Institute of Technology" />
+    <meta name="description" content="The website for the entrepreneurship cell of Manipal Institute of Technology" />
     <meta content="" property="og:image" />
-    <link rel="shortcut icon" id="favicon" href="./images/logo.png">
-    <!-- Importing fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" id="favicon" href="./images/eCellLogoDark.png">
     <!-- Importing bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Importing fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" type="text/css">
     <!-- Importing local files -->
     <link href="styles/home.css" rel="stylesheet" type="text/css" />
     <link href="styles/reset.css" rel="stylesheet" type="text/css" />
@@ -24,22 +25,25 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style="width: 100vw;" id="navbar">
-        <a class="navbar-brand ml-0 m-0" onclick="toggleContextMenu()" href="#"><span class="d-inline d-md-none"><i
-                    class="fas fa-bars ham-menu"></i></span>E-Cell<br /></a>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style=" height: 100px; width: 100vw;" id="navbar">
+        <a class="navbar-brand d-md-none d-inline ml-0 m-0" onclick="toggleContextMenu()" href="#"> 
+            <span class="d-inline d-md-none"> 
+                <i class="fas fa-bars ham-menu"></i>
+            </span><br />
+        </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-md-flex justify-content-end d-none px-md-5 flex-md-row collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#aboutus" id="aboutus-link">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#events" id="events-link">Events</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#team" id="team-link">Team</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#contact" id="contact-link">Contact Us</a>
                 </li>
             </ul>
@@ -70,13 +74,10 @@
     </nav>
 
     <div class="slide-1 position-relative">
-        <div class="logo-img">
-            <img loading="lazy" class="img" src="./images/logo.png" alt="E-Cell MIT logo" height="40">
-        </div>
         <div class="container d-flex flex-column justify-content-center h-100 w-100 text-center text-light">
+            <p class="text-white fs-1 mt-3">We are</p>
             <p class="punch-font">E-CELL</p>
-            <p class="slide-para">MIT. MANIPAL</p>
-            <img loading="lazy" class="img text-center mx-auto mt-5" src="./images/logo.png" alt="E-Cell MIT logo" width="180">
+            <img loading="lazy" class="img text-center mx-auto" src="./images/eCellLogo.png" alt="E-Cell MIT logo" height="60%" style="margin-top:-100px">
         </div>
         <div class="mx-auto social-overlay position-absolute d-flex flex-row flex-md-column justify-content-center">
             <i class="fab fa-facebook-f"></i>
@@ -91,54 +92,27 @@
 
 
     <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row" id="aboutus">
-        <p class="text-white space-font bottom-heading text-center px-3" data-aos="fade-up">Let your imaginations fly
         </p>
-        <div class="row m-0 p-0">
-            <div class="col-md-6 col-12 d-flex flex-column justify-content-center p-3 p-md-5">
-                <h1 class="slide-heading text-white d-none d-md-inline">Enterpreneurship Cell</h1>
-                <h1 class="slide-heading d-md-none pt-5" style="color: #B62B3D!important;">E-Cell</h1>
-                <p class="slide-sub-heading mt-2">Manipal Institute of Technology</p>
-                <p class="slide-para text-white pt-3">We are the entrepreneurship cell of the Manipal Institute of Technology, and we act as a bridge between students with ideas and people with expertise. We want to develop a vibrant start-up culture at campus, focusing on innovation, problem-solving,
-                    self-employment, and valuable companies' creation by creating a network of experts who could mentor the budding students to develop their ideas.</p>
-            </div>
-            <div class="col-md-6 d-none d-md-inline rocket-launchpad text-center">
-                <img loading="lazy" class="img" src="./images/rocket.png" alt="Image of a rocket" />
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid slide-3 position-relative">
-        <p class="text-white space-font bottom-heading text-center d-none d-md-inline">Be a part of our cause</p>
-        <p class="text-white space-font bottom-heading text-center d-md-none">Join our cause</p>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-5 col-12 gallery-skeleton p-3 d-grid">
-                <div class="tile item-1 bg-primary"></div>
-                <div class="tile item-2 bg-secondary"></div>
-                <div class="tile item-3 bg-warning"></div>
-            </div>
-            <div class="col-md-5 col-12 d-flex flex-column justify-content-center px-3 px-md-5">
-                <div class="text-container p-0">
+        <div class="row m-0 p-0 justify-content-center mx-auto">
+            <div class="col-md-6 d-flex flex-row justify-content-center align-items-center text-center p-md-5 p-3">
+                <div class="text-container-right px-md-3 mx-md-2">
                     <h1 class="slide-heading text-white">Mission</h1>
-                    <p class="text-white slide-para">To act as a one-stop destination for all students looking to convert their ideas into viable start-ups and to inculcate the spirit of entrepreneurship among young minds.
+                    <p class="text-white slide-para fs-3">
+                        To act as a one-stop destination for all students looking to convert their ideas into viable start-ups and to inculcate the spirit of entrepreneurship among young minds.
                     </p>
                 </div>
-                <div class="text-container pt-5">
+                <div class="text-container-left px-md-3 mx-md-2">
                     <h1 class="slide-heading text-white">Vision</h1>
-                    <p class="text-white slide-para">To empower entrepreneurship by promoting a vibrant start-up ecosystem and facilitating budding students to develop their ideas. </p>
+                    <p class="text-white slide-para fs-3">
+                        To empower entrepreneurship by promoting a vibrant start-up ecosystem and facilitating budding students to develop their ideas. </p>
                 </div>
             </div>
-            <div class="col"></div>
-        </div>
+        </div> 
     </div>
 
-    <div class="container-fluid slide-4 position-relative" id="events">
-        <p class="text-white space-font bottom-heading text-center d-none d-md-inline">Take a look at how we engage</p>
-        <p class="text-white space-font bottom-heading text-center d-md-none">How we engage</p>
-        <div class="container pt-2 px-3 px-md-5 pt-5 pt-md-0">
-            <h1 class="slide-heading text-white pt-5">Events</h1>
-            <p class="text-white slide-para">To engage with the students of the institute, we organize numerous events. These are few of them.</p>
+    <div class="container-fluid slide-4 position-relative bg-white" id="events">
+        <div class="container px-1 px-md-5 pt-md-0">
+            <h1 class="slide-heading text-dark pt-1 text-center">Events</h1>
             <div class="row events-holder py-5">
                 <!-- Card for buddy program  -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
@@ -229,46 +203,36 @@
     </div>
 
     <div class="container-fluid slide-5 position-relative" id="team">
-        <p class="text-white space-font bottom-heading text-center">Meet the crew</p>
         <div class="container p-md-5 p-3">
-            <h1 class="slide-heading text-white pt-5">Team</h1>
-            <p class="text-white slide-para">We act as the heads of E-Cell, MIT and oversee the performance of the cell and playing a pivotal role in the creation of the conditions necessary for overall member effectiveness, in order to act as a bridge between the board of advisors and
-                the students in the E-Cell. We represent the view of the students to the higher officials and managements and to suggest inputs to enhance the start-up culture in MIT.
-            </p>
-            <div class="row team-board pt-5" id="team-row">
+            <h1 class="slide-heading text-white pt-5 text-center">Team</h1>
+            <div class="row team-board pt-5 justify-content-center" id="team-row">
                 <!-- Team member cards -->
             </div>
         </div>
     </div>
 
     <div class="container-fluid slide-6 position-relative py-5" id="contact">
-        <p class="text-white space-font bottom-heading text-center">Send a signal</p>
         <div class="container pt-5">
-            <div class="row pt-5">
+            <div class="row pt-5 justify-content-center">
                 <div class="col-md-6 col-12">
                     <div class="w-md-75 w-100">
-                        <h1 class="slide-heading pyl-5 text-white">Contact Us</h1>
-                        <p class="text-white slide-para">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#B62B3D">mail@example.com</a> for more details.</p>
+                        <h1 class="slide-heading pyl-5 text-center my-3 text-white">Contact Us</h1>
+                        <p class="text-white slide-para my-2">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#B62B3D">mail@example.com</a> for more details.</p>
                         <form class="mx-auto">
                             <div class="form-group py-2">
                                 <label for="name" class="slide-para pb-1 text-white">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="What should we call you?" />
+                                <input type="text" autocomplete="off" class="form-control" id="name" placeholder="What should we call you?" />
                             </div>
                             <div class="form-group py-2">
                                 <label for="email" class="slide-para pb-1 text-white">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Where can we reach you?" />
+                                <input type="email" autocomplete="off" class="form-control" id="email" placeholder="Where can we reach you?" />
                             </div>
                             <div class="form-group py-2">
                                 <label for="message" class="slide-para pb-1 text-white">Message</label>
                                 <textarea class="form-control" id="message" placeholder="What is on your mind?"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-lg" style="background-color: #B62B3D; color: #ffffff;">Send</button>
+                            <button type="submit" class="btn btn-lg w-100 mt-2" style="background-color: #B62B3D; color: #ffffff;">SEND</button>
                         </form>
-                    </div>
-                </div>
-                <div class="col-md-6 d-none d-md-flex flex-md-column justify-content-center">
-                    <div class=" satellite-space text-center">
-                        <img loading="lazy" class="img " src="./images/satellite.png " alt="Image of a rocket " />
                     </div>
                 </div>
             </div>
@@ -278,15 +242,15 @@
     <div class="page-info w-100 p-3 ">
         <div class="row py-3 h-100 ">
             <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center ">
-                <img loading="lazy" class="img mx-auto " src="./images/logo.png" alt="Logo of E-cell " height="30 " width="30 " />
-                <p class="slide-para text-white ">
-                    Enterpreneurship Cell
+                <img loading="lazy" class="img mx-auto" src="./images/eCellLogo.png" alt="Logo of E-cell " height="300"/>
+                <p class="slide-para text-white fs-3">
+                    Entrepreneurship Cell
                 </p>
-                <p class="p-1 text-muted d-none d-md-inline ">Manipal Institute of Technology</p>
+                <p class="p-1 text-muted d-none d-md-inline fs-4">Manipal Institute of Technology</p>
             </div>
             <div class="col-md-4 col-12 d-flex flex-row justify-content-center ">
                 <div class="my-auto d-flex flex-column justify-content-center ">
-                    <p class="p-1 text-muted my-auto address-line py-2 ">Manipal Institute of Technology<br> Udupi, Karnataka
+                    <p class="p-1 fs-4 text-muted my-auto address-line py-2 ">Entrepreneurship Cell<br>Manipal Institute of Technology<br> Udupi, Karnataka
                         <br> 576104
                     </p>
                 </div>

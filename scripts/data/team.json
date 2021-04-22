@@ -1,10 +1,4 @@
-[{
-        "name": "Dhwanit Shah",
-        "position": "Chairperson",
-        "imgURL": "./images/team/DhwanitShah.jpg",
-        "phone": "+919979853462",
-        "email": "dhwanpshah@gmail.com"
-    },
+[   
     {
         "name": "Ankit Jajoo",
         "position": "Deputy Chairperson",
@@ -14,6 +8,13 @@
         "instagram": "https://www.instagram.com/ankit.jajoo47",
         "linkedin": "https://www.linkedin.com/in/ankit-jajoo-2015431b0/"
 
+    },
+    {
+        "name": "Dhwanit Shah",
+        "position": "Chairperson",
+        "imgURL": "./images/team/DhwanitShah.jpg",
+        "phone": "+919979853462",
+        "email": "dhwanpshah@gmail.com"
     },
     {
         "name": "Armaan Charania",
@@ -59,5 +60,14 @@
         "phone": "+919940027920",
         "email": "stutis2000@gmail.com",
         "instagram": "https://www.instagram.com/stuts2000"
+    },
+    {
+        "name": "Vinayak Srivastava",
+        "position": "Content Head",
+        "imgURL": "./images/team/VinayakSrivastava.jpg",
+        "phone": "+918299654991",
+        "email": "ivinayaksrivastava@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/vinayak-srivastava-1018b9163/",
+        "instagram": "https://www.instagram.com/ivinayak"
     }
 ]
