@@ -66,7 +66,7 @@ const hideEventDetails = (e) => {
 // Function to fetch details about the team members from the JSON file hosted on Github
 const getTeamMembers = async() => {
     let innerHTML_container = "";
-    const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/master/scripts/data/team.json');
+    const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/parthiv/scripts/data/team.json');
     const parsedMemberData = await teamMemberData.json();
     for (let dummy_incremator = 0; dummy_incremator < parsedMemberData.length; dummy_incremator++) {
         // checking the availability of social links
