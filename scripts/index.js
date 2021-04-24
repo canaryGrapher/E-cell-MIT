@@ -46,7 +46,7 @@ const highlightElement = (id) => {
     }
     for (let dummy_incremator = 0; dummy_incremator < scrollSpyIDs.length; dummy_incremator++) {
         if (scrollSpyIDs[dummy_incremator] === id) {
-            document.getElementById(`${id}-link`).style.color = "#B62B3D";
+            document.getElementById(`${id}-link`).style.color = "#5CE1E6";
         } else {
             document.getElementById(`${scrollSpyIDs[dummy_incremator]}-link`).style.color = "rgb(140, 134, 125)";
         }
@@ -70,7 +70,7 @@ const getTeamMembers = async() => {
     const parsedMemberData = await teamMemberData.json();
     for (let dummy_incremator = 0; dummy_incremator < parsedMemberData.length; dummy_incremator++) {
         // checking the availability of social links
-        const phone = parsedMemberData[dummy_incremator].phone ? `<a href="tel:${parsedMemberData[dummy_incremator].phone}" aria-label="phone contact link"><i class="fas fa-phone mx-2"></i></a>` : "";
+        const phone = parsedMemberData[dummy_incremator].phone ? `<a href="tel:${parsedMemberData[dummy_incremator].phone}" aria-label="phone contact link"><i class="fas fa-phone mx-2" style="transform:scaleX(-1)"></i></a>` : "";
         const email = parsedMemberData[dummy_incremator].email ? `<a href="mailto:${parsedMemberData[dummy_incremator].email}" aria-label="Email ID link"><i class="fas fa-envelope mx-2"></i></a>` : "";
         const instagram = parsedMemberData[dummy_incremator].instagram ? `<a href="${parsedMemberData[dummy_incremator].instagram}" aria-label="Instagram page link" target="_blank"><i class="fab fa-instagram mx-2"></i></a>` : "";
         const facebook = parsedMemberData[dummy_incremator].facebook ? `<a href="${parsedMemberData[dummy_incremator].facebook}" aria-label="Facebook page link" target="_blank"><i class="fab fa-facebook-f mx-2"></i></a>` : "";
@@ -80,7 +80,7 @@ const getTeamMembers = async() => {
         <div class="col-12 col-sm-4 col-md-4 member py-4">
             <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="150" />
             <img loading="lazy" class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
-            <p class="name-tag punch-font pt-2">${parsedMemberData[dummy_incremator].name}</p>
+            <p class="name-tag pt-2" style="font-weight:bold; text-transform: uppercase">${parsedMemberData[dummy_incremator].name}</p>
             <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
                 ${phone}
