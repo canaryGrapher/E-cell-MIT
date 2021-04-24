@@ -68,6 +68,14 @@ const getTeamMembers = async() => {
     let innerHTML_container = "";
     const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/parthiv/scripts/data/team.json');
     const parsedMemberData = await teamMemberData.json();
+    
+    // check and swap the order of first two team members on smaller screens
+    if(screen.width < 800) {
+        let x = parsedMemberData[1];
+        parsedMemberData[1] = parsedMemberData[0];
+        parsedMemberData[0] = x;
+    }
+
     for (let dummy_incremator = 0; dummy_incremator < parsedMemberData.length; dummy_incremator++) {
         // checking the availability of social links
         const phone = parsedMemberData[dummy_incremator].phone ? `<a href="tel:${parsedMemberData[dummy_incremator].phone}" aria-label="phone contact link"><i class="fas fa-phone mx-2" style="transform:scaleX(-1)"></i></a>` : "";

@@ -167,6 +167,32 @@
             transform: translateY(0px);
         }
     }
+
+    .fadeIn { 
+        animation: fadeIn 1000ms;
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        } 
+        100% {
+            opacity: 100%;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        } 
+        100% {
+            opacity: 100;
+            transform: translateY(0px);
+        }
+    }
     
     /* Landing page design */
     
@@ -207,45 +233,10 @@
     .slide-heading {
         font-size: 5rem;
     }
-
-    .fadeIn { 
-        animation: fadeIn 1000ms;
-    }
-
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-        } 
-        100% {
-            opacity: 100%;
-            transform: translateY(0px);
-        }
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-        } 
-        100% {
-            opacity: 100;
-            transform: translateY(0px);
-        }
-    }
     
     .slide-para {
         font-size: 1.3rem;
         line-height: 25px;
-    }
-
-    /* Third page design */
-    
-    .slide-3 {
-        padding-top: 20vh;
-        padding-bottom: 10vh;
-        background-color: #000000;
-        min-height: 60vh;
     }
     
     .text-container-left {
@@ -256,9 +247,9 @@
         text-align: right!important;
     }
 
-    /* Fourth page design */
+    /* Third page design */
     
-    .slide-4 {
+    .slide-3 {
         min-height: 50vh;
         padding-top: 5vh;
         padding-bottom: 10vh;
@@ -293,9 +284,16 @@
         justify-content: center;
     }
 
-    /* Fifth page design */
+    .tap-box {
+        border: 1px solid #5CE1E6;
+        border-radius: 7px;
+        padding: 7px;
+        width: fit-content;
+    }
+
+    /* Fourth page design */
     
-    .slide-5 {
+    .slide-4 {
         min-height: 70vh;
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -326,9 +324,9 @@
         color: #FAFAFA;
     }
 
-    /* Sixth Page design */
+    /* Fifth Page design */
     
-    .slide-6 {
+    .slide-5 {
         background-color: #000000;
     }
     
@@ -376,8 +374,8 @@
             display: none;
         }
         .center-logo {
-            padding-top: 30px;
-            height: 340px;
+            padding-top: 20%;
+            height: 40%;
         }
         .slide-1 .punch-font {
             font-size: 5rem;
