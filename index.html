@@ -10,7 +10,7 @@
     <meta name="author" content="Yash Aryan">
     <meta name="description" content="The website for the entrepreneurship cell of Manipal Institute of Technology" />
     <meta content="" property="og:image" />
-    <link rel="shortcut icon" id="favicon" href="./images/eCellLogoDark.png">
+    <link rel="shortcut icon" id="favicon" href="./images/eCellDark.png">
     <!-- Importing bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Importing font-awesome -->
@@ -32,7 +32,7 @@
             </span><br />
         </a>
         <a class="d-none d-md-block navbar-brand" href="#">
-            <img src="./images/eCellLogoLight.png" width="100" height="100" alt="">
+            <img src="./images/eCellLight.png" width="100" height="100" alt="">
         </a>
 
         <div class="d-md-flex justify-content-end d-none px-md-5 flex-md-row collapse navbar-collapse" id="navbarSupportedContent">
@@ -81,7 +81,7 @@
             <p class="text-white fs-1 mt-3">We are</p>
             <p class="fs-1 mt-3 fadeIn">The Entrepreneurship Cell</p>
             <p class="punch-font fadeIn">E-CELL</p>
-            <img loading="lazy" class="img center-logo text-center mx-auto" src="./images/eCellLogoLight.png" alt="E-Cell MIT logo" height="50%" style="margin-top:-100px; z-index: 1000">
+            <img loading="lazy" class="img center-logo text-center mx-auto" src="./images/eCellLight.png" alt="E-Cell MIT logo" height="45%" style="margin-top:-50px; z-index: 1000">
         </div>
         <div class="mx-auto social-overlay position-absolute d-flex flex-row flex-md-column justify-content-center" style="z-index: 1000;">
             <i class="fab fa-facebook-f"></i>
@@ -213,47 +213,48 @@
         </div>
     </div>
 
-        <div class="slide-5 container-fluid position-relative py-md-5 pb-5" id="contact">
-            <div class="container pt-md-5">
-                <div class="row pt-md-5 justify-content-center">
-                    <div class="col-md-6 col-12" style="z-index: 1000;">
-                        <div class="w-md-75 w-100">
-                            <h1 class="slide-heading pyl-5 text-center my-3 text-white">Contact Us</h1>
-                            <p class="text-white slide-para my-2">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#5CE1E6; font-weight: bold;">mail@example.com</a> for more details.</p>
-                            <form class="mx-auto">
-                                <div class="form-group py-2">
-                                    <label for="name" class="slide-para pb-1 text-white">Name</label>
-                                    <input type="text" autocomplete="off" class="form-control" id="name" placeholder="What should we call you?" />
-                                </div>
-                                <div class="form-group py-2">
-                                    <label for="email" class="slide-para pb-1 text-white">Email</label>
-                                    <input type="email" autocomplete="off" class="form-control" id="email" placeholder="Where can we reach you?" />
-                                </div>
-                                <div class="form-group py-2">
-                                    <label for="message" class="slide-para pb-1 text-white">Message</label>
-                                    <textarea class="form-control" id="message" placeholder="What is on your mind?"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-lg w-100 mt-3" style="background-color: #5CE1E6; color: #000000; font-weight: bold; letter-spacing: 3px;">SEND</button>
-                            </form>
-                        </div>
+    <div class="slide-5 container-fluid position-relative py-md-5 pb-5" id="contact">
+        <div class="container pt-md-5">
+            <div class="row pt-md-5 justify-content-center">
+                <div class="col-md-6 col-12" style="z-index: 1000;">
+                    <div class="w-md-75 w-100">
+                        <h1 class="slide-heading pyl-5 text-center my-3 text-white">Contact Us</h1>
+                        <p class="text-white slide-para my-2">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#5CE1E6; font-weight: bold;">mail@example.com</a> for more details.</p>
+                        <form class="mx-auto" id="contact-form">
+                            <div class="form-group py-2">
+                                <label for="name" class="slide-para pb-1 text-white">Name</label>
+                                <input type="text" autocomplete="off" class="form-control" id="name" placeholder="What should we call you?" />
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="email" class="slide-para pb-1 text-white">Email</label>
+                                <input type="email" autocomplete="off" class="form-control" id="email" placeholder="Where can we reach you?" />
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="message" class="slide-para pb-1 text-white">Message</label>
+                                <textarea class="form-control" id="message" placeholder="What is on your mind?"></textarea>
+                            </div>
+                            <p id="message-status" class="text-center" style="display: none;"></p>
+                            <button type="submit" class="btn btn-lg w-100 mt-3" style="background-color: #5CE1E6; color: #000000; font-weight: bold; letter-spacing: 3px;">SEND</button>
+                        </form>
                     </div>
-                    <div id="particles" class="d-none d-md-block" style="height: 100vh; width: 100vw; position: absolute;"></div>
                 </div>
+                <div id="particles" class="d-none d-md-block" style="height: 100vh; width: 100vw; position: absolute;"></div>
             </div>
         </div>
+    </div>
 
 
     <div class="page-info w-100 p-3 ">
         <div class="row h-100 ">
             <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center ">
-                <img loading="lazy" class="img mx-auto" src="./images/eCellLogoLight.png" alt="Logo of E-cell " height="250"/>
+                <img loading="lazy" class="img mx-auto" style="z-index: 1000;" src="./images/eCellLight.png" alt="Logo of E-cell " height="250"/>
                 <p class="slide-para text-white fs-3 d-none d-md-block">
                     Entrepreneurship Cell
                 </p>
                 <p class="p-1 text-muted d-none d-md-inline fs-4">Manipal Institute of Technology</p>
             </div>
             <div class="col-md-4 col-12 d-flex flex-row justify-content-center ">
-                <div class="my-auto d-flex flex-column justify-content-center " style="z-index: 1000;">
+                <div class="my-auto d-flex flex-column justify-content-center ">
                     <p class="p-1 fs-4 text-muted my-auto address-line py-2 ">Entrepreneurship Cell<br>Manipal Institute of Technology<br> Udupi, Karnataka
                         <br> 576104
                     </p>
@@ -285,6 +286,16 @@
 
     <!-- Importing local scripts -->
     <script src="./scripts/index.js "></script>
+
+    <!-- loading external emailJS script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
+    <!-- initialised emailJS account -->
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_pjAcrfsZTEunPw9j2ZCxS");
+        })();
+    </script>
 
     <!-- load external script for particles -->
     <script

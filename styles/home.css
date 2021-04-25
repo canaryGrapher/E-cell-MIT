@@ -81,6 +81,7 @@
     .context-menu {
         display: none;
         flex-direction: column;
+        margin-top: 10;
     }
     
     .context-menu-item {
@@ -374,7 +375,7 @@
             display: none;
         }
         .center-logo {
-            padding-top: 20%;
+            padding-top: 33%;
             height: 40%;
         }
         .slide-1 .punch-font {

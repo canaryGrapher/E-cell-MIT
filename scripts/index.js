@@ -124,8 +124,42 @@ const showContext = () => {
     document.getElementById("context-menu").style.top = `${navbarHeight}px`
 }
 
+// function to send contact form response as email 
+const sendEmail = () => {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const templateParams = {
+            from_name: document.getElementById('name').value,
+            to_name: "E-Cell",
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+            reply_to: document.getElementById('email').value
+        }
+
+        // sends email
+        emailjs.send('service_bggy5ik', 'template_wlj35b8', templateParams)
+        .then(function(response) {
+           document.getElementById('name').value = '';
+           document.getElementById('email').value = '';
+           document.getElementById('message').value = '';
+           document.getElementById('message-status').style.display = "block";
+           document.getElementById('message-status').innerHTML = 'Thank you, we have received your message!';
+           document.getElementById('message-status').style.color = "#5CE1E6";
+        }, function(error) {
+            document.getElementById('message-status').style.display = "block";
+            document.getElementById('message-status').innerHTML = 'Oops, there was an error. Try again!';
+            document.getElementById('message-status').style.color = "red";
+        });
+    });
+}
+
 
 
 //Listening to scroll events on the document
 document.addEventListener("scroll", changeNavbarStyle)
 window.addEventListener("load", showContext, false)
+
+// activates send email function on load
+window.onload = sendEmail;
+
