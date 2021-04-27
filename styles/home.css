@@ -105,13 +105,13 @@
         margin: auto auto 20px 20px;
     }
     
-    .social-overlay>i {
+    .social-overlay>a {
         font-size: 1.5rem;
         color: #FFFFFF;
         margin: 15px auto;
     }
     
-    .social-overlay>i:hover {
+    .social-overlay>a:hover {
         color: #5CE1E6;
         transform: scale(1.3);
     }
@@ -210,7 +210,6 @@
     
     .slide-1 .punch-font {
         font-size: 12rem;
-        /* mix-blend-mode: difference; */
     }
     
     .punch-font {
@@ -350,13 +349,13 @@
         text-align: left;
     }
     
-    .social-links>i {
+    .social-links>a {
         font-size: 1.4rem;
         color: #5CE1E6;
         margin: auto 10px;
     }
     
-    .social-links>i:hover {
+    .social-links>a:hover {
         color: #fafafa;
     }
     
@@ -388,7 +387,7 @@
             margin: auto auto 20px 0;
             align-items: center;
         }
-        .social-overlay>i {
+        .social-overlay>a {
             font-size: 1.2rem;
             margin: 10px auto;
         }
