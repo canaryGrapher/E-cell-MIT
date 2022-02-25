@@ -46,7 +46,7 @@ const highlightElement = (id) => {
     }
     for (let dummy_incremator = 0; dummy_incremator < scrollSpyIDs.length; dummy_incremator++) {
         if (scrollSpyIDs[dummy_incremator] === id) {
-            document.getElementById(`${id}-link`).style.color = "#B62B3D";
+            document.getElementById(`${id}-link`).style.color = "#5CE1E6";
         } else {
             document.getElementById(`${scrollSpyIDs[dummy_incremator]}-link`).style.color = "rgb(140, 134, 125)";
         }
@@ -66,21 +66,29 @@ const hideEventDetails = (e) => {
 // Function to fetch details about the team members from the JSON file hosted on Github
 const getTeamMembers = async() => {
     let innerHTML_container = "";
-    const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/master/scripts/data/team.json');
+    const teamMemberData = await fetch('https://raw.githubusercontent.com/canaryGrapher/E-cell-MIT/parthiv/scripts/data/team.json');
     const parsedMemberData = await teamMemberData.json();
+    
+    // check and swap the order of first two team members on smaller screens
+    if(screen.width < 800) {
+        let x = parsedMemberData[1];
+        parsedMemberData[1] = parsedMemberData[0];
+        parsedMemberData[0] = x;
+    }
+
     for (let dummy_incremator = 0; dummy_incremator < parsedMemberData.length; dummy_incremator++) {
         // checking the availability of social links
-        const phone = parsedMemberData[dummy_incremator].phone ? `<a href="tel:${parsedMemberData[dummy_incremator].phone}" aria-label="phone contact link"><i class="fas fa-phone mx-2"></i></a>` : "";
+        const phone = parsedMemberData[dummy_incremator].phone ? `<a href="tel:${parsedMemberData[dummy_incremator].phone}" aria-label="phone contact link"><i class="fas fa-phone mx-2" style="transform:scaleX(-1)"></i></a>` : "";
         const email = parsedMemberData[dummy_incremator].email ? `<a href="mailto:${parsedMemberData[dummy_incremator].email}" aria-label="Email ID link"><i class="fas fa-envelope mx-2"></i></a>` : "";
         const instagram = parsedMemberData[dummy_incremator].instagram ? `<a href="${parsedMemberData[dummy_incremator].instagram}" aria-label="Instagram page link" target="_blank"><i class="fab fa-instagram mx-2"></i></a>` : "";
         const facebook = parsedMemberData[dummy_incremator].facebook ? `<a href="${parsedMemberData[dummy_incremator].facebook}" aria-label="Facebook page link" target="_blank"><i class="fab fa-facebook-f mx-2"></i></a>` : "";
         const linkedin = parsedMemberData[dummy_incremator].linkedin ? `<a href="${parsedMemberData[dummy_incremator].linkedin}" aria-label="Linkedin page link" target="_blank"><i class="fab fa-linkedin-in mx-2"></i></a>` : "";
 
         let memberTemplate = `
-        <div class="col-6 col-sm-6 col-md-3 member py-4">
-            <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="250" />
+        <div class="col-12 col-sm-4 col-md-4 member py-4">
+            <img loading="lazy" class="img rounded-circle mx-auto d-none d-md-inline" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="150" />
             <img loading="lazy" class="img rounded-circle mx-auto d-inline d-md-none" src="${parsedMemberData[dummy_incremator].imgURL}" alt="${parsedMemberData[dummy_incremator].name}" height="155" />
-            <p class="name-tag pt-2">${parsedMemberData[dummy_incremator].name}</p>
+            <p class="name-tag pt-2" style="font-weight:bold; text-transform: uppercase">${parsedMemberData[dummy_incremator].name}</p>
             <p class="text-white pt-1 pb-3">${parsedMemberData[dummy_incremator].position}</p>
             <div class="d-flex flex-row justify-content-center member-social-links">
                 ${phone}
@@ -116,8 +124,42 @@ const showContext = () => {
     document.getElementById("context-menu").style.top = `${navbarHeight}px`
 }
 
+// function to send contact form response as email 
+const sendEmail = () => {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const templateParams = {
+            from_name: document.getElementById('name').value,
+            to_name: "E-Cell",
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+            reply_to: document.getElementById('email').value
+        }
+
+        // sends email
+        emailjs.send('service_bggy5ik', 'template_wlj35b8', templateParams)
+        .then(function(response) {
+           document.getElementById('name').value = '';
+           document.getElementById('email').value = '';
+           document.getElementById('message').value = '';
+           document.getElementById('message-status').style.display = "block";
+           document.getElementById('message-status').innerHTML = 'Thank you, we have received your message!';
+           document.getElementById('message-status').style.color = "#5CE1E6";
+        }, function(error) {
+            document.getElementById('message-status').style.display = "block";
+            document.getElementById('message-status').innerHTML = 'Oops, there was an error. Try again!';
+            document.getElementById('message-status').style.color = "red";
+        });
+    });
+}
+
 
 
 //Listening to scroll events on the document
 document.addEventListener("scroll", changeNavbarStyle)
 window.addEventListener("load", showContext, false)
+
+// activates send email function on load
+window.onload = sendEmail;
+

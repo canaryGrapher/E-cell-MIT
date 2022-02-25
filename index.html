@@ -5,18 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta http-equiv="Cache-control" content="public">
-    <title>Enterpreneurship Cell | MIT</title>
-    <meta name="title" content="Enterpreneurship Cell | MIT" />
+    <title>Entrepreneurship Cell | MIT</title>
+    <meta name="title" content="Entrepreneurship Cell | MIT" />
     <meta name="author" content="Yash Aryan">
-    <meta name="description" content="The website for the enterpreneurship cell of Manipal Institute of Technology" />
+    <meta name="description" content="The website for the entrepreneurship cell of Manipal Institute of Technology" />
     <meta content="" property="og:image" />
-    <link rel="shortcut icon" id="favicon" href="./images/logo.png">
-    <!-- Importing fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" id="favicon" href="./images/eCellDark.png">
     <!-- Importing bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Importing fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" type="text/css">
     <!-- Importing local files -->
     <link href="styles/home.css" rel="stylesheet" type="text/css" />
     <link href="styles/reset.css" rel="stylesheet" type="text/css" />
@@ -25,26 +26,32 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark m-0 p-0" style="width: 100vw;" id="navbar">
-        <a class="navbar-brand ml-0 m-0" onclick="toggleContextMenu()" href="#"><span class="d-inline d-md-none"><i
-                    class="fas fa-bars ham-menu"></i></span>E-Cell<br /></a>
+        <a class="navbar-brand fixed-top d-md-none d-flex w-100 ml-0 m-0" onclick="toggleContextMenu()" href="#"> 
+            <span class="d-inline d-md-none"> 
+                <i class="fas fa-bars ham-menu"></i>
+            </span><br />
+        </a>
+        <a class="d-none d-md-block navbar-brand" href="#">
+            <img src="./images/eCellLight.png" width="100" height="100" alt="">
+        </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-md-flex justify-content-end d-none px-md-5 flex-md-row collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#aboutus" id="aboutus-link">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#events" id="events-link">Events</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#team" id="team-link">Team</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-white">
                     <a class="navigation-link" href="#contact" id="contact-link">Contact Us</a>
                 </li>
             </ul>
         </div>
-
+        
         <div class="context-menu position-fixed d-md-none" id="context-menu">
             <a class="navigation-link m-0 p-0" href="#aboutus" id="aboutus-context-link" onclick="toggleContextMenu()">
                 <div class="context-menu-item">
@@ -70,236 +77,210 @@
     </nav>
 
     <div class="slide-1 position-relative">
-        <div class="logo-img">
-            <img loading="lazy" class="img" src="./images/logo.png" alt="E-Cell MIT logo" height="40">
+        <div class="container d-flex flex-column justify-content-center h-100 w-100 text-center text-light" style="z-index: 1000;">
+            <p class="text-white fs-1 mt-3">We are</p>
+            <p class="fs-1 mt-3 fadeIn">The Entrepreneurship Cell</p>
+            <p class="punch-font fadeIn">E-CELL</p>
+            <img loading="lazy" class="img center-logo text-center mx-auto" src="./images/eCellLight.png" alt="E-Cell MIT logo" height="45%" style="margin-top:-50px; z-index: 1000">
         </div>
-        <div class="container d-flex flex-column justify-content-center h-100 w-100 text-center text-light">
-            <p class="punch-font">E-CELL</p>
-            <p class="slide-para">MIT. MANIPAL</p>
-            <img loading="lazy" class="img text-center mx-auto mt-5" src="./images/logo.png" alt="E-Cell MIT logo" width="180">
+        <div class="mx-auto social-overlay position-absolute d-flex flex-row flex-md-column justify-content-center" style="z-index: 1000;">
+            <a href="https://www.facebook.com/ecellmitmanipal/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ecell.mit?igshid=xdfcrxt635x1" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ecellmitmanipal@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/company/ecellmit" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <div class="mx-auto social-overlay position-absolute d-flex flex-row flex-md-column justify-content-center">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-        <div class="slide-down-text">
-            <p class="d-none d-md-inline"><a href="#aboutus">About Us &#8594;</a></p>
+        <div class="slide-down-text" style="z-index: 1000;">
+            <p class="d-none d-md-inline"><a href="#aboutus">About Us &#8594;</span></a></p>
         </div>
     </div>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#5CE1E6" fill-opacity="0.8" d="M0,32L48,32C96,32,192,32,288,53.3C384,75,480,117,576,117.3C672,117,768,75,864,96C960,117,1056,203,1152,213.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <path fill="#ffffff" fill-opacity="0.3" d="M0,32L34.3,42.7C68.6,53,137,75,206,106.7C274.3,139,343,181,411,197.3C480,213,549,203,617,181.3C685.7,160,754,128,823,101.3C891.4,75,960,53,1029,48C1097.1,43,1166,53,1234,69.3C1302.9,85,1371,107,1406,117.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+    </svg> 
 
 
-    <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row" id="aboutus">
-        <p class="text-white space-font bottom-heading text-center px-3" data-aos="fade-up">Let your imaginations fly
+    <div class="container-fluid slide-2 p-0 m-0 d-flex flex-row" id="aboutus" style="background-color: #ffffff;">
         </p>
-        <div class="row m-0 p-0">
-            <div class="col-md-6 col-12 d-flex flex-column justify-content-center p-3 p-md-5">
-                <h1 class="slide-heading text-white d-none d-md-inline">Enterpreneurship Cell</h1>
-                <h1 class="slide-heading d-md-none pt-5" style="color: #B62B3D!important;">E-Cell</h1>
-                <p class="slide-sub-heading mt-2">Manipal Institute of Technology</p>
-                <p class="slide-para text-white pt-3">We are the entrepreneurship cell of the Manipal Institute of Technology, and we act as a bridge between students with ideas and people with expertise. We want to develop a vibrant start-up culture at campus, focusing on innovation, problem-solving,
-                    self-employment, and valuable companies' creation by creating a network of experts who could mentor the budding students to develop their ideas.</p>
-            </div>
-            <div class="col-md-6 d-none d-md-inline rocket-launchpad text-center">
-                <img loading="lazy" class="img" src="./images/rocket.png" alt="Image of a rocket" />
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid slide-3 position-relative">
-        <p class="text-white space-font bottom-heading text-center d-none d-md-inline">Be a part of our cause</p>
-        <p class="text-white space-font bottom-heading text-center d-md-none">Join our cause</p>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-5 col-12 gallery-skeleton p-3 d-grid">
-                <div class="tile item-1 bg-primary"></div>
-                <div class="tile item-2 bg-secondary"></div>
-                <div class="tile item-3 bg-warning"></div>
-            </div>
-            <div class="col-md-5 col-12 d-flex flex-column justify-content-center px-3 px-md-5">
-                <div class="text-container p-0">
-                    <h1 class="slide-heading text-white">Mission</h1>
-                    <p class="text-white slide-para">To act as a one-stop destination for all students looking to convert their ideas into viable start-ups and to inculcate the spirit of entrepreneurship among young minds.
+        <div class="row m-0 p-0 justify-content-center mx-auto px-3">
+            <div class="col-12 col-md-9 d-flex flex-md-row flex-column justify-content-center align-items-center text-center p-3">
+                <div class="text-container-right px-md-3">
+                    <h1 class="slide-heading text-dark" style="border-bottom: 1px solid black; margin-bottom: 20px; padding-bottom: 10px;">Mission</h1>
+                    <p class="text-dark slide-para fs-3" style="line-height: 40px;">
+                        To inculcate the spirit of entrepreneurship within the student community through greater awareness and act as a one-stop destination for all students looking to convert their ideas into viable start-ups.
                     </p>
                 </div>
-                <div class="text-container pt-5">
-                    <h1 class="slide-heading text-white">Vision</h1>
-                    <p class="text-white slide-para">To empower entrepreneurship by promoting a vibrant start-up ecosystem and facilitating budding students to develop their ideas. </p>
+                <div class="text-container-left px-md-3 my-3">
+                    <h1 class="slide-heading text-dark" style="border-bottom: 1px solid black; margin-bottom: 20px; padding-bottom: 10px;">Vision</h1>
+                    <p class="text-dark slide-para fs-3" style="line-height: 40px;">
+                        To empower entrepreneurs by providing them with a vibrant start-up ecosystem and developing ideas into successful ventures through dedicated mentorship and guidance.
+                    </p>
                 </div>
             </div>
-            <div class="col"></div>
         </div>
+        <div id="particles-one" class="d-none d-md-block" style="height: 100vh; width: 100vw; position: absolute;"></div>
     </div>
 
-    <div class="container-fluid slide-4 position-relative" id="events">
-        <p class="text-white space-font bottom-heading text-center d-none d-md-inline">Take a look at how we engage</p>
-        <p class="text-white space-font bottom-heading text-center d-md-none">How we engage</p>
-        <div class="container pt-2 px-3 px-md-5 pt-5 pt-md-0">
-            <h1 class="slide-heading text-white pt-5">Events</h1>
-            <p class="text-white slide-para">To engage with the students of the institute, we organize numerous events. These are few of them.</p>
+    <div class="container-fluid slide-3 position-relative bg-white" id="events">
+        <div class="container px-1 px-md-5 pt-md-0">
+            <h1 class="slide-heading text-dark pt-1 text-center">Initiatives</h1>
             <div class="row events-holder py-5">
                 <!-- Card for buddy program  -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/mentor-event.jpg');" id="buddy" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/buddy.jpeg');" id="buddy" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="buddy-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Buddy Program</h1>
-                            <p style="font-size: 1.2rem;">Enthusiastic students with promising ideas will be provided individual mentorship from entrepreneurs and will be clubbed with one founder/CEO as the buddy to guide him throughout his /her journey of establishing a start-up.
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">Buddy Program</h1>
+                            <p class="text-center" style="font-size: 1.2rem;">Enthusiastic students with promising ideas will be provided individual mentorship from entrepreneurs and will be clubbed with one founder/CEO as the buddy to guide him throughout his /her journey of establishing a start-up.
                                 There will also be opportunities provided to interact and network with more founders from Manipal.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Buddy Program</h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
                 <!-- Card for Startup visits -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/startup-event.jpg');" id="startup-visits" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/startup.jpeg');" id="startup-visits" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="startup-visits-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Startup Visits</h1>
-                            <p style="font-size: 1.2rem;">There are multiple start-ups/Industries owned by MIT alumni. The proposed body would arrange for field trips to these start-up locations for better ground understanding, and increased exposure.
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">Startup Visits</h1>
+                            <p class="text-center" style="font-size: 1.2rem;">
+                                There are multiple start-ups/industries owned by MIT alumni. The proposed body would arrange for field trips to these start-up locations for better ground understanding, and increased exposure.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Startup Visits</h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
                 <!-- Card for idea validation meetups -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/idea-event.jpg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/ideaMeet.jpeg');" id="idea-validation" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="idea-validation-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Idea Validation Meetups
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">Idea Validation Meetups
                             </h1>
-                            <p style="font-size: 1.2rem;">A platform for start-up enthusiasts to get their ideas validated from seasoned mentors, faculty, and alumni from different sectors of the industry. A platform for start-up enthusiasts to get their ideas validated from seasoned
+                            <p class="text-center" style="font-size: 1.2rem;">
+                                A platform for start-up enthusiasts to get their ideas validated from seasoned mentors, faculty, and alumni from different sectors of the industry. A platform for start-up enthusiasts to get their ideas validated from seasoned
                                 mentors, faculty, and alumni from different sectors of the industry.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Idea Validation Meetups</h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
                 <!-- Card for B-Model Competition -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/model-event.jpg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/bModel.jpeg');" id="b-model" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="b-model-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">B-Model Competition
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">B-Model Competition
                             </h1>
-                            <p style="font-size: 1.2rem;">An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
+                            <p class="text-center" style="font-size: 1.2rem;">
+                                An annual Business Model competition with the main objective of encouraging and supporting entrepreneurs by letting them go a step further with the formulation of a business model.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">B-Model Competition</h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
                 <!-- Card for Rural Entrepreneurship Division -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/rural-event.jpg');" id="rural" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/rural.jpeg');" id="rural" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="rural-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Rural Entrepreneurship Division</h1>
-                            <p style="font-size: 1.2rem;">A dedicated division focused solely on promoting innovation and entrepreneurship in the rural sector to create a positive social impact on rural society.
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">Rural Entrepreneurship Division</h1>
+                            <p class="text-center" style="font-size: 1.2rem;">
+                                A dedicated division focused solely on promoting innovation and entrepreneurship in the rural sector to create a positive social impact on rural society.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Rural Entrepreneurship Division
-                            </h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
                 <!-- Card for Camps and Workshops -->
                 <div class="card-selector col-12 col-md-6 col-lg-4 m-0 p-0">
-                    <div class="card mx-auto border-0" style="background-image: url('./images/e-summit-event.jpg');" id="e-summit" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
+                    <div class="card mx-auto border-0 align-items-center" style="background-image: url('./images/camps.jpeg');" id="e-summit" onmouseover="showEventDetails(this.id)" onmouseout="hideEventDetails(this.id)">
                         <div class="position-absolute text-white p-3 h-100 w-100 event-info" id="e-summit-text">
-                            <h1 class="font-weight-bold text-white pb-2" style="font-size: 1.5rem;">Camps and Workshops
+                            <h1 class="text-center text-white pb-2" style="font-size: 1.5rem; font-weight: bold; color: #5CE1E6!important;">Camps and Workshops
                             </h1>
-                            <p style="font-size: 1.2rem;">Our primary role will be to periodically hold camps and hands-on workshops for training potential entrepreneurs to be ready for setting up their start-up.
+                            <p class="text-center" style="font-size: 1.2rem;">
+                                Our primary role will be to periodically hold camps and hands-on workshops for training potential entrepreneurs to be ready for setting up their start-up.
                             </p>
                         </div>
-                        <div class="card-content p-4 d-flex flex-column justify-content-end h-100 pb-5">
-                            <h5 class="text-white text-right" style="font-size:34px;">Camps and Workshops</h5>
-                        </div>
+                        <p class="text-dark text-center mt-5 d-md-none d-block tap-box">Tap to see</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid slide-5 position-relative" id="team">
-        <p class="text-white space-font bottom-heading text-center">Meet the crew</p>
+    <div class="container-fluid slide-4 position-relative" id="team">
         <div class="container p-md-5 p-3">
-            <h1 class="slide-heading text-white pt-5">Team</h1>
-            <p class="text-white slide-para">We act as the heads of E-Cell, MIT and oversee the performance of the cell and playing a pivotal role in the creation of the conditions necessary for overall member effectiveness, in order to act as a bridge between the board of advisors and
-                the students in the E-Cell. We represent the view of the students to the higher officials and managements and to suggest inputs to enhance the start-up culture in MIT.
-            </p>
-            <div class="row team-board pt-5" id="team-row">
+            <h1 class="slide-heading text-white pt-5 text-center">Team</h1>
+            <div class="row team-board pt-5 justify-content-center" id="team-row">
                 <!-- Team member cards -->
             </div>
         </div>
     </div>
 
-    <div class="container-fluid slide-6 position-relative py-5" id="contact">
-        <p class="text-white space-font bottom-heading text-center">Send a signal</p>
-        <div class="container pt-5">
-            <div class="row pt-5">
-                <div class="col-md-6 col-12">
+    <div class="slide-5 container-fluid position-relative py-md-5 pb-5" id="contact">
+        <div class="container pt-md-5">
+            <div class="row pt-md-5 justify-content-center">
+                <div class="col-md-6 col-12" style="z-index: 1000;">
                     <div class="w-md-75 w-100">
-                        <h1 class="slide-heading pyl-5 text-white">Contact Us</h1>
-                        <p class="text-white slide-para">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:mail@example.com" class="text-decoration-none" style="color:#B62B3D">mail@example.com</a> for more details.</p>
-                        <form class="mx-auto">
+                        <h1 class="slide-heading pyl-5 text-center my-3 text-white">Contact Us</h1>
+                        <p class="text-white slide-para my-2 text-center">Do you have some queries? Reach out to us. You can even email us at <a href="mailto:ecellmitmanipal@gmail.com" class="text-decoration-none" style="color:#5CE1E6; font-weight: bold;">ecellmitmanipal@gmail.com</a> for more details.</p>
+                        <form class="mx-auto" id="contact-form">
                             <div class="form-group py-2">
                                 <label for="name" class="slide-para pb-1 text-white">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="What should we call you?" />
+                                <input type="text" required autocomplete="off" class="form-control" id="name" placeholder="What should we call you?" />
                             </div>
                             <div class="form-group py-2">
                                 <label for="email" class="slide-para pb-1 text-white">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Where can we reach you?" />
+                                <input type="email" required autocomplete="off" class="form-control" id="email" placeholder="Where can we reach you?" />
                             </div>
                             <div class="form-group py-2">
                                 <label for="message" class="slide-para pb-1 text-white">Message</label>
-                                <textarea class="form-control" id="message" placeholder="What is on your mind?"></textarea>
+                                <textarea class="form-control" required id="message" placeholder="What is on your mind?"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-lg" style="background-color: #B62B3D; color: #ffffff;">Send</button>
+                            <p id="message-status" class="text-center" style="display: none;"></p>
+                            <button type="submit" class="btn btn-lg w-100 mt-3" style="background-color: #5CE1E6; color: #000000; font-weight: bold; letter-spacing: 3px;">SEND</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6 d-none d-md-flex flex-md-column justify-content-center">
-                    <div class=" satellite-space text-center">
-                        <img loading="lazy" class="img " src="./images/satellite.png " alt="Image of a rocket " />
-                    </div>
-                </div>
+                <div id="particles-two" class="d-none d-md-block" style="height: 100vh; width: 100vw; position: absolute;"></div>
             </div>
         </div>
     </div>
 
+
     <div class="page-info w-100 p-3 ">
-        <div class="row py-3 h-100 ">
+        <div class="row h-100 ">
             <div class="col-md-4 col-12 d-flex flex-column justify-content-center text-center ">
-                <img loading="lazy" class="img mx-auto " src="./images/logo.png" alt="Logo of E-cell " height="30 " width="30 " />
-                <p class="slide-para text-white ">
-                    Enterpreneurship Cell
+                <img loading="lazy" class="img mx-auto" style="z-index: 1000;" src="./images/eCellLight.png" alt="Logo of E-cell " height="250"/>
+                <p class="slide-para text-white fs-3 d-none d-md-block">
+                    Entrepreneurship Cell
                 </p>
-                <p class="p-1 text-muted d-none d-md-inline ">Manipal Institute of Technology</p>
+                <p class="p-1 text-muted d-none d-md-inline fs-4">Manipal Institute of Technology</p>
             </div>
             <div class="col-md-4 col-12 d-flex flex-row justify-content-center ">
                 <div class="my-auto d-flex flex-column justify-content-center ">
-                    <p class="p-1 text-muted my-auto address-line py-2 ">Manipal Institute of Technology<br> Udupi, Karnataka
+                    <p class="p-1 fs-4 text-muted my-auto address-line py-2 ">Entrepreneurship Cell<br>Manipal Institute of Technology<br> Udupi, Karnataka
                         <br> 576104
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 col-12 d-flex flex-column justify-content-center ">
-                <p class="mx-auto pb-2 text-white slide-para ">Connect with us</p>
+            <div class="col-md-4 col-12 d-flex flex-column justify-content-center " style="z-index: 1000;">
+                <p class="mx-auto pb-2 text-white slide-para mt-3">Connect with us at E-Cell</p>
                 <div class="social-links mx-auto ">
-                    <i class="fab fa-facebook-f "></i>
-                    <i class="fab fa-instagram "></i>
-                    <i class="fas fa-envelope "></i>
-                    <i class="fab fa-linkedin-in "></i>
+                    <a href="https://www.facebook.com/ecellmitmanipal/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/ecell.mit?igshid=xdfcrxt635x1" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:ecellmitmanipal@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/company/ecellmit" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p class="text-center pt-3 text-muted ">I made this website. <a href="https://yasharyan.com " target="_blank " style="text-decoration: none; color: #B62B3D; ">Find me</a>.</p>
+                <p class="text-center pt-3 text-muted " style="z-index: 1000; margin: 3px;">
+                    We made this website.
+                    <div class="d-flex flex-column text-center justify-content-center">
+                        <a href="https://yasharyan.com " target="_blank " style="text-decoration: none; color: #5CE1E6; margin: 3px;">
+                            Yash Aryan
+                        </a>
+                        <a href="http://parthivmenon.herokuapp.com/ " target="_blank " style="text-decoration: none; color: #5CE1E6; margin: 3px; ">
+                            Parthiv Menon
+                        </a>
+                    </div> 
+                .</p>
             </div>
         </div>
     </div>
@@ -307,6 +288,135 @@
 
     <!-- Importing local scripts -->
     <script src="./scripts/index.js "></script>
+
+    <!-- loading external emailJS script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
+    <!-- initialised emailJS account -->
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_pjAcrfsZTEunPw9j2ZCxS");
+        })();
+    </script>
+
+    <!-- load external script for particles -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+        integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- particles configuration scripts -->
+    <script>
+        const particles = {
+          "particles": {
+            "number": {
+              "value": 3,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#736a73",
+            },
+            "shape": {
+              "type": "polygon",
+              "stroke": {
+                "width": 0,
+                "color": "#000"
+              },
+              "polygon": {
+                "nb_sides": 3
+              },
+            },
+            "opacity": {
+              "value": 0.3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 160,
+              "random": false,
+              "anim": {
+                "enable": true,
+                "speed": 10,
+                "size_min": 40,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": false,
+              "distance": 200,
+              "color": "#ffffff",
+              "opacity": 1,
+              "width": 2
+            },
+            "move": {
+              "enable": true,
+              "speed": 8,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false,
+                "mode": "bubble"
+              },
+              "onclick": {
+                "enable": false,
+                "mode": "bubble"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        }
+        tsParticles.load('particles-one', particles);
+        tsParticles.load('particles-two', particles);
+      </script>
+      <!-- particles configuration scripts -->
 </body>
 
 </html>

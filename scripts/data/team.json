@@ -1,10 +1,4 @@
-[{
-        "name": "Dhwanit Shah",
-        "position": "Chairperson",
-        "imgURL": "./images/team/DhwanitShah.jpg",
-        "phone": "+919979853462",
-        "email": "dhwanpshah@gmail.com"
-    },
+[   
     {
         "name": "Ankit Jajoo",
         "position": "Deputy Chairperson",
@@ -16,13 +10,21 @@
 
     },
     {
+        "name": "Dhwanit Shah",
+        "position": "Chairperson",
+        "imgURL": "./images/team/DhwanitShah.jpg",
+        "phone": "+919979853462",
+        "email": "dhwanpshah@gmail.com",
+        "instagram": "http://instagram.com/shah_dhwanit",
+        "linkedin": "https://www.linkedin.com/in/dhwanit-shah-301b0a159"
+    },
+    {
         "name": "Armaan Charania",
         "position": "Deputy Chairperson",
         "imgURL": "./images/team/ArmaanCharania.jpg",
         "phone": "+917378833923",
         "email": "armaan.charania9@gmail.com",
         "instagram": "https://www.instagram.com/arm._.aan",
-        "facebook": "https://www.facebook.com/armaan.charania",
         "linkedin": "https://www.linkedin.com/in/armaan-charania-2a5008194"
     },
     {
@@ -58,6 +60,15 @@
         "imgURL": "./images/team/StutiSinha.jpg",
         "phone": "+919940027920",
         "email": "stutis2000@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/stuti-sinha-74b78420b",
         "instagram": "https://www.instagram.com/stuts2000"
+    },
+    {
+        "name": "Ashwin Suresh",
+        "position": "Content Head",
+        "imgURL": "./images/team/AshwinSuresh.png",
+        "phone": "+919482639220",
+        "linkedin": " https://www.linkedin.com/in/ashwin-suresh-572109138",
+        "instagram": "https://www.instagram.com/ash_808_"
     }
 ]
